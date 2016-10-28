@@ -1,0 +1,42 @@
+.avatar-container
+  .avatar-photo
+    .bg-img style="background-image: url(#{asset_path('photo/avatar.jpg')})"
+  p петро петрович
+p.small-title Категорії сайту
+a.category href=root_path
+  | Головна
+  = inline_svg "svg/ic_home_black.svg"
+a.category href=top_path
+  | Топ 10
+  = inline_svg "svg/ic_equalizer_black.svg"
+a.category href=analytics_main_path
+  | Аналітика
+  = inline_svg "svg/ic_trending_up_black.svg"
+.sub-category-container
+  a.sub-category href=analytics_price_path Ціни
+  a.sub-category href=analytics_volume_path Об'єми
+  a.sub-category href=analytics_production_path Виробництво
+  a.sub-category href=analytics_foreign_path З.Е.Д.
+a.category
+  | Новини
+  = inline_svg "svg/ic_insert_drive_file_black.svg"
+a.category
+  | Про нас
+  = inline_svg "svg/ic_business_center_black.svg"
+a.category
+  | Контакти
+  = inline_svg "svg/ic_email_black.svg"
+
+p.small-title Соціальні мережі
+
+.social-container
+  a.social = inline_svg "svg/social-fb.svg"
+  a.social = inline_svg "svg/social-google.svg"
+  a.social = inline_svg "svg/social-twitter.svg"
+
+p.small-title Підписка на новини
+.input-field
+  input
+  label Ваш e-mail
+  span.bar
+  = inline_svg "svg/arrow-right.svg"

@@ -1,0 +1,16 @@
+.top-nav.shadow
+  = render "topnav"
+
+.side-nav.shadow
+  = render "sidenav"
+
+.main-wrapper
+
+  .clearfix
+    .main-container
+      = render "page_main_content"
+    .side-bar.shadow
+      = render "page_main_sidebar"
+
+  .footer
+    = render "footer"

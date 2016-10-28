@@ -1,0 +1,84 @@
+form
+.input-field
+  position: relative
+  input, textarea
+    padding: 10px 0 10px
+    display: block
+    width: 100%
+    border: none
+    outline: none
+    background-color: transparent
+    text-transform: capitalize
+    &:focus
+      outline: none
+  label
+    font-size: 14px
+    position: absolute
+    pointer-events: none
+    top: 30px
+    transition: all 0.2s ease
+  textarea
+    margin-top: 50px
+    resize: none
+    & ~ label
+      top: -20px
+  .bar
+    position: relative
+    display: block
+    width: 100%
+    &:before, &:after
+      content: ''
+      height: 1px
+      width: 0
+      bottom: 0
+      position: absolute
+      background: $blue
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+    &:before
+      left: 0
+  input:focus ~ .bar, textarea:focus ~ .bar, input.used ~ .bar, textarea.used ~ .bar
+    &:before
+      width: 100%
+
+.side-nav
+  .input-field
+    padding: 20px
+    input
+      color: white
+      border-bottom: 1px solid white
+    label
+      color: white
+    input:focus ~ label, input.used ~ label
+      top: 10px
+      font-size: 12px
+      color: $blue
+    svg
+      position: absolute
+      top: 30px
+      right: 20px
+      fill: white
+      +transition(0.25s)
+    input:focus ~ svg, input.used ~ svg
+      right: 15px
+      fill: $blue
+
+.search-input-field
+  @extend .input-field
+  input
+    color: $dark-navy
+    border-bottom: 1px solid $medium-grey
+    padding-left: 25px
+  label
+    color: $medium-grey
+    padding-left: 25px
+    top: 10px
+  input:focus ~ label, input.used ~ label
+    display: none
+  svg
+    position: absolute
+    top: 10px
+    left: 0
+    fill: $medium-grey
+    +transition(0.25s)
+  input:focus ~ svg, input.used ~ svg
+    fill: $blue

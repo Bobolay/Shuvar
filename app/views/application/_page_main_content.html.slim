@@ -1,0 +1,117 @@
+.page-main-content
+
+  .indent-container
+
+    .news
+      p.blue-title Новини
+      .grid-container
+        a.grid-block.shadow
+          .text-bg-rollable
+          .img-block
+            .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+          .text
+            p.regular-medium Ціни на картоплю падають, фермери в журбі
+            p.smaller Враховуючи нестабільну ситуацію на ринку вартість картоплі стрімко знижується.
+        a.grid-block.shadow
+          .text-bg-rollable
+          .img-block
+            .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+          .text
+            p.regular-medium Імпорт закордонних бананів на Україну
+            p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...
+        a.grid-block.shadow
+          .text-bg-rollable
+          .img-block
+            .bg-img style="background-image: url(#{asset_path('photo/news-img-3.jpg')})"
+          .text
+            p.regular-medium Парниковий ефект спасіння цієї землі
+            p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...
+
+    .analytics-container
+      p.blue-title Аналітика товару
+      .indent-container.shadow
+        .search-option-field
+          .icon-container
+            = inline_svg "svg/search.svg"
+          .search
+            input
+        .search-option-field
+          .icon-container
+            = inline_svg "svg/calendar.svg"
+          .search
+            input#datepicker
+        .tab-container.diagram-container
+          .tab-controls.clearfix
+            p.tab-control.active графік ціни
+            p.tab-control графік ціни
+          .tab-contents.diagrams
+            .tab-content.diagram.active style="background-color: #429F46"
+            .tab-content.diagram style="background-color: #029AE4"
+        .clearfix
+          .panel-button
+            a всі продукти
+
+    .production-container
+      p.blue-title Виробництво
+      .indent-container.shadow
+        .search-option-field
+          .icon-container
+            = inline_svg "svg/search.svg"
+          .search
+            input
+        .search-option-field
+          .icon-container
+            = inline_svg "svg/calendar.svg"
+          .search
+            input#datepicker
+        .map-container
+          = inline_svg "svg/map.svg"
+        .info-statistics
+          p.description
+            | Виробництво картоплі у області з 
+            span 20 січня 2016 
+            | по 
+            span 7 листопада 2016
+            | складає:
+          p.total
+            | 12560 
+            span тонн
+          .progress-bar
+            .percent-bar
+            p
+              span 18% 
+              | від загальної по Україні
+        .clearfix
+          .panel-button
+            a детальніше
+
+    .advertisement
+      img src=asset_path('photo/tomatoes-long.jpg')
+      .clearfix
+        .edvertisement-subtitle
+          p Рекламний блок. Деталі 
+          a тут.
+
+    .import-export
+      p.blue-title Імпорт та експорт
+      .indent-container.shadow
+        .search-option-field
+          .icon-container
+            = inline_svg "svg/search.svg"
+          .search
+            input
+        .search-option-field
+          .icon-container
+            = inline_svg "svg/calendar.svg"
+          .search
+            input#datepicker
+        .clearfix
+          .currencies-container
+            p.currency.active Грн
+            p.currency Дол
+            p.currency Євро
+        .diagrams
+          .diagram style="background-color: #429F46"
+        .clearfix
+          .panel-button
+            a детальніше

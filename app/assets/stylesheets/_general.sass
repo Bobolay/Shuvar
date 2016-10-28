@@ -1,0 +1,186 @@
+$blue: #029AE4
+$navy: #536D79
+$dark-navy: #36464E
+$grey: #CED7DB
+$light-grey: #EBEEF0
+$medium-grey: #AFBDC4
+$dark-grey: #778F9B
+$dark: #606060
+$avatar-background-color: #253137
+$light-blue: #8FA3AD
+
+body
+  font-family: 'Roboto', sans-serif
+  // background-color: $dark-navy
+
+a
+  display: block
+  text-decoration: none
+
+.clearfix
+  +clearfix
+
+.small-title
+  font-size: 12px
+.side-bar
+  .small-title
+    color: $light-blue
+    margin-bottom: 20px
+
+.blue-title
+  color: $blue
+  margin-bottom: 10px
+  margin-top: 40px
+  +medium
+  &:nth-child(n+2)
+    // margin-top: 40px
+
+.regular-medium
+  +medium
+  line-height: 22px
+
+.smaller
+  font-size: 14px
+  line-height: 18px
+
+.smaller-medium
+  @extend .smaller
+  +medium
+
+.smaller-bold
+  @extend .smaller
+  +bold
+
+.img-block
+  position: relative
+  overflow: hidden
+
+.bg-img
+  background-size: cover
+  background-position: center
+  width: 100%
+  height: 100%
+  position: absolute
+
+.indent-container
+  padding: 20px
+  overflow: hidden
+  @media #{$small-only}
+    padding: 10px
+
+.see-more
+  display: block
+  font-size: 14px
+  text-transform: uppercase
+  +bold
+  color: $blue
+  text-align: right
+
+.grid-container
+  +clearfix
+  margin: -10px
+  .grid-block
+    position: relative
+    margin: 10px
+    float: left
+    overflow: hidden
+  @media #{$small-only}
+    margin: -5px
+    .grid-block
+      margin: 5px
+
+.shadow
+  box-shadow: 0px 1px 2px rgba(0,0,0, 0.2)
+  background-color: white
+
+.search-option-field
+  display: inline-block
+  padding-right: 30px
+  +clearfix
+  border: 1px solid $grey
+  height: 47px
+  margin-right: 20px
+  .icon-container
+    position: relative
+    width: 47px
+    height: 45px
+    float: left
+    background-color: $light-grey
+    border-right: 1px solid $grey
+    svg
+      position: absolute
+      top: 50%
+      left: 50%
+      +translate(-50%,-50%)
+      fill: $blue
+      width: 18px
+      height: 18px
+  .search
+    float: left
+    input
+      color: $navy
+      line-height: 47px
+      margin-left: 10px
+      border: none
+      background-color: transparent
+      &:focus
+        outline: none
+
+.panel-button
+  position: relative
+  background-color: $blue
+  width: 160px
+  height: 40px
+  float: right
+  text-align: center
+  margin-top: 30px
+  border-radius: 2px
+  box-shadow: 0px 1px 2px rgba(0,0,0, 0.2)
+  a
+    color: white
+    text-transform: uppercase
+    font-size: 14px
+    +bold
+    line-height: 40px
+
+.info-statistics
+  .description
+    font-size: 14px
+    color: $dark
+    span
+      +bold
+
+.line-separator
+  border-top: none
+  border-bottom: 1px solid $grey
+  margin: 10px 0
+
+.main-wrapper
+  width: 100%
+  background-color: white
+  +clearfix
+  @media #{$xlarge-up}
+    padding-left: 250px
+
+.main-container
+  width: calc(100%)
+  float: left
+  background-color: $light-grey
+  padding-bottom: 30px
+  margin-top: 50px
+  min-height: calc(100vh - 100px)
+  @media #{$large-up}
+    width: calc(100% - 300px)
+  +xxxlarge-up
+    width: calc(100% - 400px)
+
+.side-bar
+  float: right
+  display: none
+  margin-top: 50px
+  min-height: calc(100vh - 100px)
+  @media #{$large-up}
+    display: block
+    width: 300px
+  +xxxlarge-up
+    width: 400px

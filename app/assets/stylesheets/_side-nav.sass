@@ -1,0 +1,151 @@
+.side-nav
+  position: fixed
+  color: white
+  background-color: $dark-navy
+  width: 250px
+  top: 50px
+  left: 0
+  bottom: 0
+  overflow-y: auto
+  overflow-x: hidden
+  +transition(1s)
+  +translate(-100%,0)
+  z-index: 5
+  @media #{$xlarge-up}
+    +translate(0,0)
+  &.opened
+    +translate(0,0)
+
+  .avatar-container
+    background-color: $avatar-background-color
+    padding: 20px 0
+    .avatar-photo
+      position: relative
+      width: 80px
+      height: 80px
+      border-radius: 50%
+      overflow: hidden
+      margin: 0 auto
+    p
+      font-size: 14px
+      margin-top: 10px
+      text-transform: uppercase
+      +medium
+      text-align: center
+
+  .small-title
+    opacity: 0.3
+    padding: 20px 0 10px 20px
+    position: relative
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 1px
+      background-color: $avatar-background-color
+      left: 20px
+      bottom: 5px
+
+  .category
+    color: white
+    display: block
+    position: relative
+    padding: 10px 0 10px 50px
+    & > *
+      +transition(0.1s)
+    svg
+      position: absolute
+      fill: white
+      width: 20px
+      left: 20px
+    &:before
+      content: ''
+      position: absolute
+      width: 4px
+      height: 100%
+      left: 0
+      top: 0
+      background-color: $blue
+      opacity: 0
+    &:hover, &.active
+      background-color: $light-grey
+      color: $blue
+      svg
+        fill: $blue
+      &:before
+        opacity: 1
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        right: -2px
+        background-color: $light-grey
+        width: 3px
+        height: 100%
+
+
+  .sub-category-container
+    position: relative
+    padding: 5px 0
+    padding-left: 45px
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-color: white
+      opacity: 0.05
+    .sub-category
+      position: relative
+      color: white
+      opacity: 0.6
+      font-size: 13px
+      margin: 5px 0
+      padding-left: 15px
+      +transition(0.1s)
+      &:nth-child(-n+2)
+        &:before
+          content: '-'
+          position: absolute
+          top: 0
+          left: 0
+          color: rgba(255,255,255,0.6)
+      &:nth-child(n+3)
+        &:before
+          content: ''
+          position: absolute
+          width: 3px
+          height: 3px
+          background-color: rgba(255,255,255,0.6)
+          top: 8px
+          left: 0
+          +rotate(45deg)
+      &:hover
+        opacity: 1
+        &:nth-child(-n+2)
+          &:before
+            color: white
+        &:nth-child(n+3)
+          &:before
+            background-color: white
+
+
+  .social-container
+    padding-left: 10px
+  .social
+    display: inline-block
+    width: 40px
+    height: 40px
+    svg
+      fill: white
+      +transition(0.25s)
+      opacity: 0.8
+    &:hover
+      svg
+        fill: $blue
+        opacity: 1
+
+  

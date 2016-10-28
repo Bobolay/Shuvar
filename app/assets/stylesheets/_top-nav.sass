@@ -1,0 +1,85 @@
+.top-nav
+  position: fixed
+  background-color: $grey
+  width: 100%
+  height: 50px
+  z-index: 100
+  border-bottom: 1px solid rgba(63, 78, 86, 0.12)
+
+  .menu-button
+    position: relative
+    display: inline-block
+    float: left
+    cursor: pointer
+    width: 50px
+    height: 50px
+    padding: 18px 15px
+    background-color: #303d44
+    border-right: 1px solid rgba(0,0,0,0.1)
+    .hamburger
+      +burger(20px, 2px, 4px, white, 1px)
+    &.opened
+      background-color: $blue
+      .hamburger
+        +burger-to-cross
+    @media #{$xlarge-up}
+      display: none
+
+  .menu-logo
+    position: relative
+    text-align: center
+    float: left
+    width: 200px
+    line-height: 50px
+    background-color: $dark-navy
+    svg
+      width: 150px
+      height: 17px
+      position: relative
+      top: 4px
+    @media #{$xlarge-up}
+      width: 250px
+
+  .search-container
+    position: relative
+    display: inline-block
+    line-height: 50px
+    padding-left: 30px
+    margin-left: 20px
+    span
+      font-size: 14px
+      color: $dark-grey
+    svg
+      position: absolute
+      top: 16px
+      left: 0
+      width: 16px
+      height: 16px
+
+  .language-and-popup-container
+    float: right
+    .language
+      text-transform: uppercase
+      float: left
+      font-size: 14px
+      line-height: 50px
+      width: 40px
+      color: $light-blue
+      text-align: center
+      font-weight: 500
+      +transition(0.1s)
+      &:hover, &.active
+        color: $blue
+    .popup-button
+      float: left
+      line-height: 50px
+      width: 50px
+      background-color: $blue
+      margin-left: 20px
+      svg
+        position: relative
+        fill: white
+        width: 20px
+        height: 20px
+        left: 14px
+        top: 4px

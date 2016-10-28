@@ -1,0 +1,30 @@
+.footer
+  position: relative
+  +clearfix
+  font-size: 12px
+  line-height: 50px
+  padding: 0 20px
+  background-color: $grey
+  color: $dark-grey
+  clear: both
+  .left-part
+    float: left
+    +transition(0.25s)
+    color: $dark-grey
+    svg
+      fill: $dark-grey
+      width: 25px
+      display: inline-block
+      margin-right: 10px
+      position: relative
+      top: 5px
+      +transition(0.25s)
+    span
+      @media #{$small-only}
+        display: none
+    &:hover
+      color: $blue
+      svg
+        fill: $blue
+  .right-part
+    float: right
