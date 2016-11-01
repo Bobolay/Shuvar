@@ -11,6 +11,8 @@
   +transition(1s)
   +translate(-100%,0)
   z-index: 5
+  @media #{$small-only}
+    width: 100%
   @media #{$xlarge-up}
     +translate(0,0)
   &.opened

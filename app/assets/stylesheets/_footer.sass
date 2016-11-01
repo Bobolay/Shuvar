@@ -7,10 +7,17 @@
   background-color: $grey
   color: $dark-grey
   clear: both
+  @media #{$small-only}
+    padding: 0 1rem
   .left-part
     float: left
     +transition(0.25s)
     color: $dark-grey
+    a
+      color: inherit
+      display: inline-block
+      &:hover
+        text-decoration: underline
     svg
       fill: $dark-grey
       width: 25px
@@ -23,8 +30,11 @@
       @media #{$small-only}
         display: none
     &:hover
-      color: $blue
-      svg
-        fill: $blue
+      a
+        color: $blue
+        svg
+          fill: $blue
   .right-part
     float: right
+    @media #{$small-only}
+      font-size: 10px

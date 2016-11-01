@@ -60,52 +60,9 @@
 
 .page-top-sidebar
   
-  .filter-container
-    margin-top: 30px
   .filter-option
-    position: relative
-    cursor: pointer
-    &:before
-      content: ''
-      position: absolute
-      width: 200%
-      height: 100%
-      top: 0
-      left: -50%
-      background-color: $blue
-      opacity: 0
-      +transition(0.1s)
-    label
-      display: block
-      position: relative
-      z-index: 1
-      font-size: 14px
-      color: $light-blue
-      margin-left: 30px
-      padding: 10px 0
-      +medium
-      +transition(0.1s)
-      cursor: pointer
-      .qnty
-        color: $grey
-    svg
-      position: absolute
-      width: 20px
-      top: 10px
-      left: 0
-      fill: $blue
-      +transition(1s)
     .check
-      display: block
-      position: absolute
-      border: 2px solid $light-blue
       border-radius: 100%
-      width: 20px
-      height: 20px
-      top: 10px
-      right: 0
-      z-index: 1
-      +transition(0.1s)
       &:before
         display: block
         position: absolute
@@ -117,22 +74,10 @@
         left: 3px
         +transition(0.1s)
     input
-      visibility: hidden
-      position: absolute
       &:checked ~ .check
         &:before
           background-color: $blue
     &:hover
-      &:before
-        opacity: 1
-      label
-        color: $white
-        .qnty
-          color: $white
-      svg
-        fill: white
-      .check
-        border: 2px solid white
       input
         &:checked ~ .check
           &:before

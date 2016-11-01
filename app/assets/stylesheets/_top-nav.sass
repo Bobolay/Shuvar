@@ -5,6 +5,8 @@
   height: 50px
   z-index: 100
   border-bottom: 1px solid rgba(63, 78, 86, 0.12)
+  @media #{$small-only}
+    background-color: $dark-navy
 
   .menu-button
     position: relative
@@ -37,24 +39,34 @@
       height: 17px
       position: relative
       top: 4px
+    @media #{$small-only}
+      width: 30%
+      svg
+        width: 80%
     @media #{$xlarge-up}
       width: 250px
 
-  .search-container
+  .search-input-field
     position: relative
     display: inline-block
     line-height: 50px
-    padding-left: 30px
-    margin-left: 20px
-    span
-      font-size: 14px
+    padding-left: 20px
+    label
       color: $dark-grey
+      top: 0
+    input
+      border-bottom: 0
+      line-height: 50px
+      padding: 0 0 0 30px
     svg
       position: absolute
+      fill: $dark-navy
       top: 16px
-      left: 0
+      left: 20px
       width: 16px
       height: 16px
+    @media #{$small-only}
+      display: none
 
   .language-and-popup-container
     float: right

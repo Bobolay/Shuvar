@@ -1,0 +1,40 @@
+table.analytics
+  width: 100%
+  
+  tr
+    border-bottom: 1px solid $light-grey
+  th
+    @extend .smaller-bold
+    color: white
+    background-color: $dark-navy
+    text-transform: uppercase
+    padding: 15px 0
+  th, td
+    text-align: center
+  td
+    padding: 10px 0
+    color: $navy
+    font-size: 14px
+
+  @media #{$small-only}
+
+    th
+      display: none
+    tr
+      display: block
+      padding: 15px 20px 20px
+      border-bottom: 0
+      &:first-child
+        display: none
+      &:nth-child(odd)
+        background-color: $light-grey
+    td
+      display: block
+      text-align: right
+      &:last-child
+        border-bottom: 0
+      &:before
+        content: attr(data-label)": "
+        float: left
+        text-transform: uppercase
+        font-weight: bold
