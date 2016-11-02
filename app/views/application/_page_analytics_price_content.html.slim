@@ -13,33 +13,64 @@
           | продукт
         th 
           | ціна 
-          span (мінімум)
+          span &#40;мінімум&#41;
         th
           | ціна 
-          span (середня)
+          span &#40;середня&#41;
         th
           | ціна 
-          span (максимум)
+          span &#40;максимум&#41;
         th
           | динаміка
-      tr
-        td data-label="№" 1
+      tr.product-row.growth
+        td data-label="№"
         td data-label="продукт" Персик
         td data-label="ціна (мінімум)" 120
         td data-label="ціна (середня)" 180
         td data-label="ціна (максимум)" 185
-        td data-label="динаміка" 1
-      tr
-        td data-label="№" 2
+        td data-label="динаміка"
+          = inline_svg "svg/arrow-right.svg"
+          = inline_svg "svg/arrows-equal.svg"
+          span 7%
+      tr.product-row.decrease
+        td data-label="№"
         td data-label="продукт" Банан
         td data-label="ціна (мінімум)" 147
         td data-label="ціна (середня)" 117
         td data-label="ціна (максимум)" 134
-        td data-label="динаміка" 2
-      tr
-        td data-label="№" 3
+        td data-label="динаміка"
+          = inline_svg "svg/arrow-right.svg"
+          = inline_svg "svg/arrows-equal.svg"
+          span 3%
+      tr.product-row.equal
+        td data-label="№"
         td data-label="продукт" Яблоко
         td data-label="ціна (мінімум)" 78
         td data-label="ціна (середня)" 48
         td data-label="ціна (максимум)" 96
-        td data-label="динаміка" 3
+        td data-label="динаміка"
+          = inline_svg "svg/arrow-right.svg"
+          = inline_svg "svg/arrows-equal.svg"
+          span 0%
+      tr.product-category
+        td colspan="6" Цитрусові
+      tr.product-row.growth
+        td data-label="№"
+        td data-label="продукт" Ківі
+        td data-label="ціна (мінімум)" 120
+        td data-label="ціна (середня)" 180
+        td data-label="ціна (максимум)" 185
+        td data-label="динаміка"
+          = inline_svg "svg/arrow-right.svg"
+          = inline_svg "svg/arrows-equal.svg"
+          span 2%
+      tr.product-row.decrease
+        td data-label="№"
+        td data-label="продукт" Полуниця
+        td data-label="ціна (мінімум)" 147
+        td data-label="ціна (середня)" 117
+        td data-label="ціна (максимум)" 134
+        td data-label="динаміка"
+          = inline_svg "svg/arrow-right.svg"
+          = inline_svg "svg/arrows-equal.svg"
+          span 10%

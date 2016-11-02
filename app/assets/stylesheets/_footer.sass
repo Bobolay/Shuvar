@@ -8,7 +8,7 @@
   color: $dark-grey
   clear: both
   @media #{$small-only}
-    padding: 0 1rem
+    padding: 0 10px
   .left-part
     float: left
     +transition(0.25s)
@@ -27,6 +27,9 @@
       top: 5px
       +transition(0.25s)
     span
+      @media #{$small-only}
+        display: none
+    span ~ a
       @media #{$small-only}
         display: none
     &:hover

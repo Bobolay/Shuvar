@@ -8,7 +8,9 @@ Rails.application.routes.draw do
     get "analytics_volume", action: "analytics_volume"
     get "analytics_production", action: "analytics_production"
     get "analytics_foreign", action: "analytics_foreign"
-    # get "contact-us", action: "contact_us"
+    get "news", action: "news"
+    get "about_us", action: "about_us"
+    get "contacts", action: "contacts"
   end
 
   # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

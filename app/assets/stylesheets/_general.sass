@@ -8,6 +8,8 @@ $dark-grey: #778F9B
 $dark: #606060
 $avatar-background-color: #253137
 $light-blue: #8FA3AD
+$green: #429F46
+$red: #E54918
 
 body
   font-family: 'Roboto', sans-serif
@@ -94,7 +96,7 @@ a
 
 .search-option-field
   display: inline-block
-  padding-right: 30px
+  padding-right: 10px
   +clearfix
   border: 1px solid $grey
   height: 47px
@@ -122,8 +124,22 @@ a
       margin-left: 10px
       border: none
       background-color: transparent
+      max-width: 150px
+      +medium
       &:focus
         outline: none
+    .datepicker
+      width: 6rem
+      text-align: center
+      @media #{$small-only}
+        width: 5rem
+        font-size: 14px
+      & ~ span
+        margin-left: 10px
+  @media #{$small-only}
+    margin-right: initial
+    width: 280px
+
 
 .panel-button
   position: relative

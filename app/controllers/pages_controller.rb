@@ -31,6 +31,18 @@ class PagesController < ApplicationController
 
   end
 
+  def news
+
+  end
+
+  def about_us
+
+  end  
+
+  def contacts
+
+  end  
+
   private
 
   def set_page_instance
