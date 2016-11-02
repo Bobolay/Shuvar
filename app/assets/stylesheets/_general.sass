@@ -190,12 +190,44 @@ a
     width: calc(100% - 400px)
 
 .side-bar
+  position: fixed
+  top: 100px
+  right: 0
+  bottom: 0
   float: right
-  display: none
-  margin-top: 50px
   min-height: calc(100vh - 100px)
+  width: 300px
+  z-index: 5
+  overflow-y: auto
+  overflow-x: hidden
+  +transition(1s)
+  +translate(100%,0)
+  &.opened
+    +translate(0,0)
+  @media #{$small-only}
+    right: 10px
+    +translate(120%,0)
   @media #{$large-up}
+    position: relative
     display: block
+    top: 0
+    margin-top: 50px
     width: 300px
+    right: initial
+    +translate(0,0)
   +xxxlarge-up
     width: 400px
+
+.sidebar-button
+  position: fixed
+  background-color: $dark-navy
+  right: 0
+  top: 80px
+  cursor: pointer
+  z-index: 10
+  border-radius: 10%
+  line-height: 1
+  svg
+    fill: white
+  @media #{$large-up}
+    display: none
