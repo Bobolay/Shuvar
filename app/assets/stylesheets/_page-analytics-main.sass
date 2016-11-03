@@ -76,31 +76,3 @@
           opacity: 1
         svg
           +translate(-50%,-50%)
-
-.page-analytics-main-sidebar
-  
-  .filter-option
-    .check
-      border-radius: 20%
-      &:before
-        display: block
-        position: absolute
-        content: '\2713'
-        color: white
-        font-size: 12px
-        font-weight: bold
-        line-height: 1
-        left: 3px
-        top: 2px
-        opacity: 0
-    input
-      &:checked ~ .check
-        &:before
-          color: $blue
-          opacity: 1
-    &:hover
-      input
-        &:checked ~ .check
-          &:before
-            opacity: 1
-            color: white

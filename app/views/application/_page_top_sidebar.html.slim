@@ -1,63 +1,9 @@
-.page-top-sidebar
+= render "filter_radio"
 
-  .indent-container
+.line-separator
 
-    .small-title Фільтр:
-
-    .filter-container
-      .filter-option
-        input#option-1 type="radio"
-        label for="option-1"
-          | Овочі 
-          span.qnty
-            | (33)
-        .check
-        = inline_svg "svg/products-1.svg"
-      .filter-option
-        input#option-2 type="radio"
-        label for="option-2"
-          | Фрукти 
-          span.qnty
-            | (51)
-        .check
-        = inline_svg "svg/products-2.svg"
-      .filter-option
-        input#option-3 type="radio"
-        label for="option-3"
-          | Риба 
-          span.qnty
-            | (34)
-        .check
-        = inline_svg "svg/products-3.svg"
-      .filter-option
-        input#option-4 type="radio"
-        label for="option-4"
-          | М'ясо 
-          span.qnty
-            | (18)
-        .check
-        = inline_svg "svg/products-4.svg"
-      .filter-option
-        input#option-5 type="radio"
-        label for="option-5"
-          | Бакалія 
-          span.qnty
-            | (31)
-        .check
-        = inline_svg "svg/products-5.svg"
-      .filter-option
-        input#option-6 type="radio"
-        label for="option-6"
-          | Квіти 
-          span.qnty
-            | (107)
-        .check
-        = inline_svg "svg/products-6.svg"
-
-  .line-separator
-
-  .indent-container
-    
-    .small-title Рекламний блок:
-    img src=asset_path('photo/tomatoes.jpg')
+.indent-container
+  
+  .small-title Рекламний блок:
+  img src=asset_path('photo/tomatoes.jpg')
 
