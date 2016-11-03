@@ -7,7 +7,6 @@ $(document).on "ready", ->
     $(this).toggleClass('opened')
     $side_nav.toggleClass('opened')
 
-
   $.clickOut(".menu-button",
     ()->
       $menu_button.removeClass('opened')
@@ -15,17 +14,22 @@ $(document).on "ready", ->
     {except: ".menu-button, .side-nav"}
   )
 
+
+
+
+
   $sidebar_button = $('.sidebar-button')
   $side_bar = $('.side-bar')
 
   $sidebar_button.on 'click', ->
-    # $(this).toggleClass('opened')
+    $(this).toggleClass('opened')
     $side_bar.toggleClass('opened')
-
+    $('body').toggleClass('overflow')
 
   $.clickOut(".sidebar-button",
     ()->
-      # $menu_button.removeClass('opened')
+      $sidebar_button.removeClass('opened')
       $side_bar.removeClass('opened')
+      $('body').removeClass('overflow')
     {except: ".sidebar-button, .side-bar"}
   )

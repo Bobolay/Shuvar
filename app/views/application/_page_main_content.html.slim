@@ -47,8 +47,10 @@
             p.tab-control.active графік ціни
             p.tab-control обсяги продукту
           .tab-contents.diagrams
-            .tab-content.diagram.active style="background-color: #429F46"
-            .tab-content.diagram style="background-color: #029AE4"
+            .tab-content.diagram.active
+              img src=asset_path('photo/diagram-1.png')
+            .tab-content.diagram
+              img src=asset_path('photo/diagram-2.png')
         .clearfix
           .panel-button
             a всі продукти
@@ -119,7 +121,8 @@
             p.currency Дол
             p.currency Євро
         .diagrams
-          .diagram style="background-color: #429F46"
+          .diagram
+            img src=asset_path('photo/diagram-2.png')
         .clearfix
           .panel-button
             a детальніше
