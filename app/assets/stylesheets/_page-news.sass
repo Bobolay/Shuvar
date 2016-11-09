@@ -1,0 +1,53 @@
+.tags-container
+  position: relative
+  margin: 10px 0 20px
+  padding-left: 30px
+  +clearfix
+  svg
+    position: absolute
+    top: 10px
+    left: 0
+    width: 20px
+    height: 20px
+    fill: $dark-grey
+  .tag
+    float: left
+    line-height: 30px
+    background-color: $medium-grey
+    padding: 0 15px
+    margin: 5px
+    color: white
+    border-radius: 3px
+    cursor: pointer
+    +transition(0.25s)
+    &:hover, &.active
+      background-color: $blue
+
+.page-news-content
+  
+  .horizontal-news-container
+    margin-top: 30px
+
+  .news-block
+    +clearfix
+    padding: 20px
+    border-bottom: 1px solid $light-grey
+    @media #{$small-only}
+      padding: 10px
+    .photo
+      position: relative
+      float: left
+      width: 100px
+      height: 80px
+    .text
+      padding-left: 120px
+      .title
+        +medium
+        color: $dark-navy
+        line-height: 22px
+      .date
+        font-size: 12px
+        +medium
+        color: $dark-grey
+        margin-top: 10px
+

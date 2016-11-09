@@ -1,28 +1,25 @@
-.news
-
-  p.blue-title Новини
-  .grid-container
-    a.grid-block.shadow
-      .text-bg-rollable
-      .img-block
-        .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
-      .text
-        p.small-title 17 серпня 2016
-        p.regular-medium Ціни на картоплю падають, фермери в журбі
-        p.smaller Враховуючи нестабільну ситуацію на ринку вартість картоплі стрімко знижується.
-    a.grid-block.shadow
-      .text-bg-rollable
-      .img-block
-        .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
-      .text
-        p.small-title 21 липня 2016
-        p.regular-medium Імпорт закордонних бананів на Україну
-        p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...
-    a.grid-block.shadow
-      .text-bg-rollable
-      .img-block
-        .bg-img style="background-image: url(#{asset_path('photo/news-img-3.jpg')})"
-      .text
-        p.small-title 30 червня 2016
-        p.regular-medium Парниковий ефект спасіння цієї землі
-        p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...
+.grid-container.news
+  a.grid-block.shadow href=news_one_path
+    .text-bg-rollable
+    .img-block
+      .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+    .text
+      p.small-title 17 серпня 2016
+      p.regular-medium Ціни на картоплю падають, фермери в журбі
+      p.smaller Враховуючи нестабільну ситуацію на ринку вартість картоплі стрімко знижується.
+  a.grid-block.shadow href=news_one_path
+    .text-bg-rollable
+    .img-block
+      .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+    .text
+      p.small-title 21 липня 2016
+      p.regular-medium Імпорт закордонних бананів на Україну
+      p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...
+  a.grid-block.shadow href=news_one_path
+    .text-bg-rollable
+    .img-block
+      .bg-img style="background-image: url(#{asset_path('photo/news-img-3.jpg')})"
+    .text
+      p.small-title 30 червня 2016
+      p.regular-medium Парниковий ефект спасіння цієї землі
+      p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...

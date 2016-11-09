@@ -35,6 +35,10 @@ class PagesController < ApplicationController
 
   end
 
+  def news_one
+
+  end
+
   def about_us
 
   end  

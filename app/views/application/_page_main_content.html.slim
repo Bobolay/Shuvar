@@ -1,105 +1,104 @@
-.page-main-content
+.page-main-content.indent-container
 
-  .indent-container
+  p.blue-title Новини
+  = render "news"
 
-    = render "news"
-
-    .analytics-container
-      p.blue-title Аналітика товару
-      .indent-container.shadow
-        .search-option-field
-          .icon-container
-            = inline_svg "svg/search.svg"
-          .search
-            input type="text" name="product-name" value="Картопля"
-        .search-option-field
-          .icon-container
-            = inline_svg "svg/calendar.svg"
-          .search
-            input.datepicker
-            span &mdash;
-            input.datepicker
-        .tab-container.diagram-container
-          .tab-controls.clearfix
-            p.tab-control.active графік ціни
-            p.tab-control обсяги продукту
-          .tab-contents.diagrams
-            .tab-content.diagram.active
-              img src=asset_path('photo/diagram-1.png')
-            .tab-content.diagram
-              img src=asset_path('photo/diagram-2.png')
-        .clearfix
-          a.panel-button
-            | всі продукти
-
-    .production-container
-      p.blue-title Виробництво
-      .indent-container.shadow
-        .search-option-field
-          .icon-container
-            = inline_svg "svg/search.svg"
-          .search
-            input type="text" name="product-name" value="Помідор"
-        .search-option-field
-          .icon-container
-            = inline_svg "svg/calendar.svg"
-          .search
-            input.datepicker
-        .search-option-field
-          .icon-container
-            = inline_svg "svg/geo.svg"
-          .search
-            input
-
-        .map-container
-          = inline_svg "svg/map.svg"
-        .info-statistics
-          p.description
-            | Виробництво картоплі у області з 
-            span 20 січня 2016 
-            | по 
-            span 7 листопада 2016 
-            | складає:
-          p.total
-            | 12560 
-            span тонн
-          .progress-bar
-            .percent-bar
-            p
-              span 18% 
-              | від загальної по Україні
-        .clearfix
-          a.panel-button
-            | детальніше
-
-    .advertisement
-      img src=asset_path('photo/tomatoes-long.jpg')
-      .clearfix
-        .edvertisement-subtitle
-          p Рекламний блок. Деталі 
-          a тут.
-
-    .import-export
-      p.blue-title Імпорт та експорт
-      .indent-container.shadow
-        .search-option-field
-          .icon-container
-            = inline_svg "svg/search.svg"
-          .search
-            input type="text" name="product-name" value="Персик"
-        .search-option-field
-          .icon-container
-            = inline_svg "svg/calendar.svg"
-          .search
-            input.datepicker
-        .clearfix
-          .currencies-container
-            p.currency.active Грн
-            p.currency Дол
-            p.currency Євро
-        .diagrams
-          .diagram
+  .analytics-container
+    p.blue-title Аналітика товару
+    .indent-container.shadow
+      .search-option-field
+        .icon-container
+          = inline_svg "svg/search.svg"
+        .search
+          input type="text" name="product-name" value="Картопля"
+      .search-option-field
+        .icon-container
+          = inline_svg "svg/calendar.svg"
+        .search
+          input.datepicker
+          span &mdash;
+          input.datepicker
+      .tab-container.diagram-container
+        .tab-controls.clearfix
+          p.tab-control.active графік ціни
+          p.tab-control обсяги продукту
+        .tab-contents.diagrams
+          .tab-content.diagram.active
+            img src=asset_path('photo/diagram-1.png')
+          .tab-content.diagram
             img src=asset_path('photo/diagram-2.png')
-        .clearfix
-          a.panel-button
-            | детальніше
+      .clearfix
+        a.panel-button
+          | всі продукти
+
+  .production-container
+    p.blue-title Виробництво
+    .indent-container.shadow
+      .search-option-field
+        .icon-container
+          = inline_svg "svg/search.svg"
+        .search
+          input type="text" name="product-name" value="Помідор"
+      .search-option-field
+        .icon-container
+          = inline_svg "svg/calendar.svg"
+        .search
+          input.datepicker
+      .search-option-field
+        .icon-container
+          = inline_svg "svg/geo.svg"
+        .search
+          input
+
+      .map-container
+        = inline_svg "svg/map.svg"
+      .info-statistics
+        p.description
+          | Виробництво картоплі у області з 
+          span 20 січня 2016 
+          | по 
+          span 7 листопада 2016 
+          | складає:
+        p.total
+          | 12560 
+          span тонн
+        .progress-bar
+          .percent-bar
+          p
+            span 18% 
+            | від загальної по Україні
+      .clearfix
+        a.panel-button
+          | детальніше
+
+  .advertisement
+    img src=asset_path('photo/tomatoes-long.jpg')
+    .clearfix
+      .edvertisement-subtitle
+        p Рекламний блок. Деталі 
+        a тут.
+
+  .import-export
+    p.blue-title Імпорт та експорт
+    .indent-container.shadow
+      .search-option-field
+        .icon-container
+          = inline_svg "svg/search.svg"
+        .search
+          input type="text" name="product-name" value="Персик"
+      .search-option-field
+        .icon-container
+          = inline_svg "svg/calendar.svg"
+        .search
+          input.datepicker
+      .clearfix
+        .currencies-container
+          p.currency.active Грн
+          p.currency Дол
+          p.currency Євро
+      .diagrams
+        .diagram
+          img src=asset_path('photo/diagram-2.png')
+      .clearfix
+        a.panel-button
+          | детальніше

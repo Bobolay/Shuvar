@@ -23,6 +23,7 @@ a
 
 .clearfix
   +clearfix
+  // display: flex
 
 .small-title
   font-size: 12px
@@ -189,6 +190,8 @@ a
   +clearfix
   @media #{$xlarge-up}
     padding-left: 250px
+  & > .clearfix
+    display: flex
 
 .main-container
   width: calc(100%)

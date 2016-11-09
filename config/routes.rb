@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get "analytics_production", action: "analytics_production"
     get "analytics_foreign", action: "analytics_foreign"
     get "news", action: "news"
+    get "news_one", action: "news_one"
     get "about_us", action: "about_us"
     get "contacts", action: "contacts"
   end
