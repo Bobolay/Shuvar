@@ -1,0 +1,42 @@
+table.shadow.analytics-table
+  tr
+    th
+      | №
+    th
+      | продукт
+    th 
+      | 2014 
+      span тис. тонн
+    th 
+      | 2015 
+      span тис. тонн
+    th
+      | 2015/2014 
+      span роки
+  tr.product-row
+    td data-label="№"
+    td data-label="продукт" Персик
+    td data-label="2014 тис. тонн" 120
+    td data-label="2015 тис. тонн" 130
+    td.growth data-label="2015/2014 роки"
+      = inline_svg "svg/arrow-right.svg"
+      = inline_svg "svg/arrows-equal.svg"
+      span 7%
+  tr.product-row
+    td data-label="№"
+    td data-label="продукт" Банан
+    td data-label="2014 тис. тонн" 110
+    td data-label="2015 тис. тонн" 120
+    td.decrease data-label="2015/2014 роки"
+      = inline_svg "svg/arrow-right.svg"
+      = inline_svg "svg/arrows-equal.svg"
+      span 3%
+  tr.product-row
+    td data-label="№"
+    td data-label="продукт" Апельсин
+    td data-label="2014 тис. тонн" 120
+    td data-label="2015 тис. тонн" 120
+    td.equal data-label="2015/2014 роки"
+      = inline_svg "svg/arrow-right.svg"
+      = inline_svg "svg/arrows-equal.svg"
+      span 0%

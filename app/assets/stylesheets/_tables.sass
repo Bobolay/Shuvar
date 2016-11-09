@@ -7,43 +7,46 @@ table.analytics-table
     border-bottom: 1px solid $light-grey
   .product-row
     counter-increment: rowNumber
+    &:hover
+      background-color: $blue
+      td
+        color: white !important
+        svg
+          fill: white !important
     td:first-child
       &:after
         content: counter(rowNumber)
-    td:last-child
-      svg
-        position: relative
-        width: 20px
-        height: 20px
-        top: 5px
-        display: none
-    &.growth
-      td:last-child
-        color: $green
-        svg
-          &:first-child
-            display: inline-block
-            +rotate(-90deg)
-            fill: $green
-    &.decrease
-      td:last-child
-        color: $red
-        svg
-          &:first-child
-            display: inline-block
-            +rotate(90deg)
-            fill: $red
-    &.equal
-      td:last-child
-        color: $dark-grey
-        svg
-          &:nth-child(n+2)
-            display: inline-block
-            fill: $dark-grey
+  .growth, .decrease, .equal
+    svg
+      position: relative
+      width: 20px
+      height: 20px
+      top: 5px
+      display: none
+  .growth
+    color: $green
+    svg
+      &:first-child
+        display: inline-block
+        +rotate(-90deg)
+        fill: $green
+  .decrease
+    color: $red
+    svg
+      &:first-child
+        display: inline-block
+        +rotate(90deg)
+        fill: $red
+  .equal
+    color: $dark-grey
+    svg
+      &:nth-child(n+2)
+        display: inline-block
+        fill: $dark-grey
   th
     @extend .smaller-bold
     color: white
-    background-color: $dark-navy
+    background-color: $table-header
     text-transform: uppercase
     padding: 15px 0
     padding-left: 20px
@@ -58,6 +61,18 @@ table.analytics-table
     color: $navy
     font-size: 14px
     padding-left: 20px
+  tr.subheader-tr
+    background-color: $grey
+    @media #{$small-only}
+      display: none
+  td.subheader-cell
+    // background-color: $grey
+    color: $navy
+    line-height: 1
+    span
+      color: $light-blue
+      font-size: 12px
+      display: block
 
   @media #{$small-only}
 

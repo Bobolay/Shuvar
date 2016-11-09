@@ -2,30 +2,7 @@
 
   .indent-container
 
-    .news
-      p.blue-title Новини
-      .grid-container
-        a.grid-block.shadow
-          .text-bg-rollable
-          .img-block
-            .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
-          .text
-            p.regular-medium Ціни на картоплю падають, фермери в журбі
-            p.smaller Враховуючи нестабільну ситуацію на ринку вартість картоплі стрімко знижується.
-        a.grid-block.shadow
-          .text-bg-rollable
-          .img-block
-            .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
-          .text
-            p.regular-medium Імпорт закордонних бананів на Україну
-            p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...
-        a.grid-block.shadow
-          .text-bg-rollable
-          .img-block
-            .bg-img style="background-image: url(#{asset_path('photo/news-img-3.jpg')})"
-          .text
-            p.regular-medium Парниковий ефект спасіння цієї землі
-            p.smaller Враховуючи нестабільну ситуацію на ринку вартість ...
+    = render "news"
 
     .analytics-container
       p.blue-title Аналітика товару

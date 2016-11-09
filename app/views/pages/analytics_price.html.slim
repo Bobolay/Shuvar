@@ -8,9 +8,18 @@
 
   .clearfix
     .main-container
-      = render "page_analytics_price_content"
+
+      .indent-container
+        p.blue-title Динаміка цін:
+        p.small-title Динаміка цін на ринку Шувар
+        = render "table_price"
+
     .side-bar.shadow
-      = render "page_analytics_price_sidebar"
+      = render "filter_checkbox"
+      = render "filter_for_price"
+      = render "download_button"
+      .line-separator
+      = render "advertisement"
 
   .footer
     = render "footer"

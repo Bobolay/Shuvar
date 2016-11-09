@@ -1,0 +1,23 @@
+.top-nav.shadow
+  = render "topnav"
+
+.side-nav.shadow
+  = render "sidenav"
+
+.main-wrapper
+
+  .clearfix
+    .main-container
+      .indent-container
+        p.blue-title Об'єми продукції
+        p.small-title Динаміка зміни об'ємів продукції на ринку Шувар
+        = render "table_volume"
+
+    .side-bar.shadow
+      = render "filter_checkbox"
+      = render "download_button"
+      .line-separator
+      = render "advertisement"
+
+  .footer
+    = render "footer"

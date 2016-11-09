@@ -1,0 +1,23 @@
+.top-nav.shadow
+  = render "topnav"
+
+.side-nav.shadow
+  = render "sidenav"
+
+.main-wrapper
+
+  .clearfix
+    .main-container
+      .indent-container
+        p.blue-title Виробництво продукції
+        p.small-title Виробництво продукції в Україні
+        = render "table_production"
+      
+    .side-bar.shadow
+      = render "filter_checkbox"
+      = render "download_button"
+      .line-separator
+      = render "advertisement"
+
+  .footer
+    = render "footer"

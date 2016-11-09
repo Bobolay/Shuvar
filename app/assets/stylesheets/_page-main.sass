@@ -15,9 +15,14 @@
         padding: 10px 20px
         @media #{$xxlarge-up}
           padding: 20px
-      .regular-medium, .smaller
-        color: $dark-navy
+      .small-title
         position: relative
+        color: $dark-grey
+        +medium
+        z-index: 1
+      .regular-medium, .smaller
+        position: relative
+        color: $dark-navy
         z-index: 1
       .smaller
         margin-top: 10px
@@ -41,7 +46,7 @@
       &:hover
         .bg-img
           +scale(1.05)
-        .regular-medium, .smaller
+        .regular-medium, .smaller, .small-title
           color: white
         .text-bg-rollable
           background-color: $blue

@@ -91,4 +91,5 @@ gem 'cms', github: "pkorenev/cms"
 
 gem 'require_reloader'
 
-gem 'thin'
+gem 'puma'
+

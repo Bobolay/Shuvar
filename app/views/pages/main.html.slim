@@ -7,13 +7,29 @@
 .main-wrapper
 
   .clearfix
+
     .main-container
       = render "page_main_content"
+
     .side-bar.shadow
-      = render "page_main_sidebar"
+
+      = render "product_category_on_sidebar"
+
+      .line-separator
+
+      = render "expert_view"
+
+      .indent-container.clearfix
+        a.see-more переглянути всі
+
+      .line-separator
+
+      = render "advertisement"
+
 
   .footer
     = render "footer"
+
 
 .sidebar-button
   = inline_svg "svg/more.svg"

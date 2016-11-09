@@ -7,10 +7,14 @@
 .main-wrapper
 
   .clearfix
+
     .main-container
       = render "page_top_content"
+      
     .side-bar.shadow
-      = render "page_top_sidebar"
+      = render "filter_radio"
+      .line-separator
+      = render "advertisement"
 
   .footer
     = render "footer"
