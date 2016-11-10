@@ -7,6 +7,10 @@
     font-size: 20px
     text-transform: uppercase
 
+  .name
+    +medium
+    color: $dark-navy
+
   .top-text
     max-width: 600px
     margin: 0 auto
@@ -52,17 +56,68 @@
     .grid-block
       width: calc(33% - 20px)
       text-align: center
-      // padding: 30px
       height: 200px
       @media #{$small-only}
         width: calc(50% - 10px)
       svg
         width: 80px
         height: 80px
-      .service-name
-        +medium
-        color: $dark-navy
       .smaller
         color: $navy
         max-width: 200px
         margin: 10px auto
+  
+  .our-partners
+    margin-top: 80px
+    .grid-container
+      margin-top: 30px
+      margin-bottom: 30px
+    .grid-block
+      position: relative
+      width: calc(25% - 20px)
+      text-align: center
+      &:after
+        content: ''
+        display: block
+        padding-bottom: 100%
+      @media #{$small-only}
+        width: calc(50% - 10px)
+      svg
+        position: absolute
+        left: 50%
+        top: 40%
+        +translate(-50%,-50%)
+        width: 50%
+        height: 50%
+      .name
+        position: absolute
+        bottom: 10%
+        width: 100%
+        text-align: center
+
+  .join-us
+    display: flex
+    .smaller
+      color: $navy
+      margin-top: 10px
+    .photo
+      float: left
+      width: 40%
+      position: relative
+      &:after
+        content: ''
+        display: block
+        padding-bottom: 100%
+    .indent-container
+      position: relative
+      float: left
+      width: 60%
+      padding: 40px
+    .button
+      float: none
+      position: absolute
+      left: 40px
+      bottom: 40px
+      @media #{$small-only}
+        left: 10px
+        bottom: 10px

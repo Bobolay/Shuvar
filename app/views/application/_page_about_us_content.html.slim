@@ -29,25 +29,52 @@
       .grid-container
         .grid-block
           = inline_svg "svg/services-1.svg"
-          p.service-name Новини
+          p.name Новини
           p.smaller Короткий текст опис на одне або два речення даної категорії або послуги
         .grid-block
           = inline_svg "svg/services-2.svg"
-          p.service-name Ціни
+          p.name Ціни
           p.smaller Короткий текст опис на одне або два речення даної категорії або послуги
         .grid-block
           = inline_svg "svg/services-3.svg"
-          p.service-name Обсяги
+          p.name Обсяги
           p.smaller Короткий текст опис на одне або два речення даної категорії або послуги
         .grid-block
           = inline_svg "svg/services-4.svg"
-          p.service-name Виробництво
+          p.name Виробництво
           p.smaller Короткий текст опис на одне або два речення даної категорії або послуги
         .grid-block
           = inline_svg "svg/services-5.svg"
-          p.service-name ЗЕД
+          p.name ЗЕД
           p.smaller Короткий текст опис на одне або два речення даної категорії або послуги
         .grid-block
           = inline_svg "svg/services-6.svg"
-          p.service-name Консультації
+          p.name Консультації
           p.smaller Короткий текст опис на одне або два речення даної категорії або послуги
+
+    .our-partners  
+      p.main-title
+        | наші партнери
+      .grid-container
+        .grid-block.shadow
+          = inline_svg "svg/partners-1.svg"
+          p.name Галвинпрод
+        .grid-block.shadow
+          = inline_svg "svg/partners-2.svg"
+          p.name Олейна
+        .grid-block.shadow
+          = inline_svg "svg/partners-3.svg"
+          p.name Вікнарьоф
+        .grid-block.shadow
+          = inline_svg "svg/partners-4.svg"
+          p.name Апельсин
+
+    .shadow.join-us.clearfix
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+      .indent-container
+        p.main-title бажаєте бути в темі
+        p.smaller Зареєструвавшись ви отримаєте доступ до повної аналітики товарів та робити підписки на актуальні новини по продуктах
+        a.button зареєструватись
+
+
