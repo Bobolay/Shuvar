@@ -7,35 +7,88 @@
     span
       color: $medium-grey
 
-.new-container
-  position: relative
-  margin-top: 20px
-  .photo
+  .new-container
     position: relative
-    height: 300px
-  .date
-    position: relative
-    color: $medium-grey
-    padding-left: 25px
-    svg
-      position: absolute
-      fill: $medium-grey
-      top: 0
-      left: 0
-      width: 16px
-      height: 16px
-  .new-name
-    font-size: 22px
-    +medium
-    color: $blue
-    margin: 10px 0 30px
-  .main-text
-    color: $table-header
-    margin: 30px 0
-  .tags-container
-    float: left
-  .rules-of-quote
-    float: right
-    font-size: 12px
-    color: $blue
     margin-top: 20px
+    .photo
+      position: relative
+      height: 300px
+    .date
+      position: relative
+      color: $medium-grey
+      padding-left: 25px
+      svg
+        position: absolute
+        fill: $medium-grey
+        top: 0
+        left: 0
+        width: 16px
+        height: 16px
+    .new-name
+      font-size: 22px
+      +medium
+      color: $blue
+      margin: 10px 0 30px
+    .main-text
+      color: $table-header
+      margin: 30px 0
+    .tags-container
+      float: left
+    .rules-of-quote
+      float: right
+      font-size: 12px
+      color: $blue
+      margin-top: 20px
+
+  .grid-container
+    .grid-block
+      height: 100px
+      cursor: pointer
+      width: calc(50% - 20px)
+      +transition(0.2s)
+      .photo
+        position: relative
+        width: 100px
+        height: 100%
+        float: left
+        +transition(0.2s)
+      svg
+        position: absolute
+        fill: white
+        top: 50%
+        left: 50%
+        width: 24px
+        height: 24px
+        z-index: 1
+        +transition(0.2s)
+        opacity: 0
+      .text
+        float: left
+        width: calc(100% - 100px)
+        padding: 10px 20px
+      .small-title, .title, .bg-img
+        +transition(0.2s)
+      .title
+        color: $table-header
+        +medium
+        line-height: 1
+        margin-top: 10px
+      &.go-prev
+        svg
+          +translate(20%,-50%)
+      &.go-next
+        svg
+          +translate(-120%,-50%)
+      &:hover
+        background-color: $blue
+        .photo
+          background-color: rgba($dark-navy, 0.2)
+        .bg-img
+          opacity: 0
+        .small-title, .title
+          color: white
+        svg
+          opacity: 1
+          +translate(-50%,-50%)
+      @media #{$small-only}
+        width: calc(100% - 10px)
