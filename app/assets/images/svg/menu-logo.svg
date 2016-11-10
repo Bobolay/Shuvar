@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="148px" height="17px" viewBox="0 0 148 17" enable-background="new 0 0 148 17" xml:space="preserve">
 <g>
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M77.1,0c1.2,0,2.3,0.2,3.3,0.7c1,0.4,1.9,1,2.7,1.8
+	<path class="logo-name" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M77.1,0c1.2,0,2.3,0.2,3.3,0.7c1,0.4,1.9,1,2.7,1.8
 		c0.8,0.8,1.4,1.7,1.8,2.7c0.4,1,0.7,2.1,0.7,3.3v8.5h-8.4c-1.2,0-2.2-0.2-3.3-0.7c-1-0.4-1.9-1-2.7-1.8c-0.8-0.8-1.4-1.7-1.8-2.7
 		c-0.4-1-0.7-2.1-0.7-3.3c0-1.2,0.2-2.3,0.7-3.3c0.4-1,1-1.9,1.8-2.7c0.8-0.8,1.7-1.4,2.7-1.8C74.9,0.2,75.9,0,77.1,0L77.1,0z
 		 M20.6,17h-3.4V0.1h3.4v6.7h8.2V0h3.4c0,5.5,0,11.3,0,16.9h-3.4v-6.8h-8.2V17L20.6,17z M98.2,0v3.4h-1.7c-0.7,0-1.4,0.1-2,0.4

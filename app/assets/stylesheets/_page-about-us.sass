@@ -1,0 +1,68 @@
+.page-about-us-content
+
+  .main-title
+    color: $dark-navy
+    text-align: center
+    +bold
+    font-size: 20px
+    text-transform: uppercase
+
+  .top-text
+    max-width: 600px
+    margin: 0 auto
+    padding-top: 100px
+    text-align: center
+    @media #{$small-only}
+      max-width: 300px
+    svg
+      width: 225px
+      height: 26px
+      .logo-name
+        fill: $navy
+    p
+      margin-top: 20px
+      color: $navy
+      font-size: 18px
+      line-height: 26px
+
+  .our-goals-container
+    .grid-block
+      width: calc(50% - 20px)
+      text-align: center
+      padding: 30px
+      +transition(0.2s)
+      height: 200px
+      @media #{$small-only}
+        width: calc(100% - 10px)
+    .title
+      color: $dark-navy
+      +bold
+      text-transform: uppercase
+    .line-separator
+      width: 100px
+      margin: 20px auto
+    .regular
+      color: $navy
+
+  .our-services
+    padding: 30px
+    margin-top: 20px
+    .grid-container
+      margin: 30px 0
+    .grid-block
+      width: calc(33% - 20px)
+      text-align: center
+      // padding: 30px
+      height: 200px
+      @media #{$small-only}
+        width: calc(50% - 10px)
+      svg
+        width: 80px
+        height: 80px
+      .service-name
+        +medium
+        color: $dark-navy
+      .smaller
+        color: $navy
+        max-width: 200px
+        margin: 10px auto
