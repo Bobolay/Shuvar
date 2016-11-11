@@ -7,6 +7,8 @@
 #= require plugins/clickout
 #= require appear-initialize
 
+#= require google-map
+
 #= require main
 
 #= require datepick

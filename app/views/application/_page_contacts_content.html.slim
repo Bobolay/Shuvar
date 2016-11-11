@@ -1,0 +1,97 @@
+.contacts-content.indent-container
+
+  p.blue-title Контакти
+
+  .shadow.indent-container.map-container
+    .contact-block
+      = inline_svg "svg/phone.svg"
+      .small-title Телефон
+      .smaller +38 032 456 7887
+    .contact-block
+      = inline_svg "svg/geo.svg"
+      .small-title Адреса
+      .smaller Україна, м.Львів, вул. Хуторівка 4б
+    #google-map
+
+  p.blue-title Наша команда
+
+  .grid-container.our-team
+
+    .grid-block.shadow.clearfix.indent-container
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/stuff-2.jpg')})"
+      .text
+        .title Тетяна Гетьман
+        .small-title Керівник &#171;Info-Shuvar&#187;
+        .contact-block
+          = inline_svg "svg/phone.svg"
+          .smaller +38 099 7630232
+        .contact-block
+          = inline_svg "svg/ic_email_black.svg"
+          .smaller t.getman@shuvar.com
+
+    .grid-block.shadow.clearfix.indent-container
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/stuff-2.jpg')})"
+      .text
+        .title Віта Хадновська
+        .small-title Фахівець по роботі з виробниками
+        .contact-block
+          = inline_svg "svg/phone.svg"
+          .smaller +38 096 3162622
+        .contact-block
+          = inline_svg "svg/ic_email_black.svg"
+          .smaller v.hodnovska@shuvar.com
+
+    .grid-block.shadow.clearfix.indent-container
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/stuff-1.jpg')})"
+      .text
+        .title Іван Воськало
+        .small-title Фахівець з моніторингу цін
+        .contact-block
+          = inline_svg "svg/phone.svg"
+          .smaller +38 098 4311377
+        .contact-block
+          = inline_svg "svg/ic_email_black.svg"
+          .smaller i.voskalo@shuvar.com
+
+    .grid-block.shadow.clearfix.indent-container
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/stuff-2.jpg')})"
+      .text
+        .title Оксана Козак
+        .small-title Фахівець з ЗЕД
+        .contact-block
+          = inline_svg "svg/phone.svg"
+          .smaller +38 067 3058214
+        .contact-block
+          = inline_svg "svg/ic_email_black.svg"
+          .smaller o.kozak@shuvar.com
+
+  p.blue-title Зворотній зв'язок
+
+  .shadow.form-container
+    form.grid-container
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Прізвище та ім'я
+          span.bar
+          = inline_svg "svg/person.svg"
+        .input-field
+          input
+          label Контактний номер
+          span.bar
+          = inline_svg "svg/phone.svg"
+        .input-field
+          input
+          label Електронна скринька
+          span.bar
+          = inline_svg "svg/ic_email_black.svg"
+      .grid-block.textarea-container
+        .input-field
+          textarea
+          label Ваш коментар...
+      .clearfix
+        button.button type="submit" відправити
