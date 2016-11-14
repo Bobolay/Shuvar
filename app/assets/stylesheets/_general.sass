@@ -39,6 +39,8 @@ a
   margin-bottom: 10px
   margin-top: 40px
   +medium
+.blue-title-first
+  margin-top: 10px
 
 .regular-medium
   +medium
@@ -201,10 +203,20 @@ a
   padding-bottom: 30px
   margin-top: 50px
   min-height: calc(100vh - 100px)
+  & > *
+    &:first-child
+      // margin-top: -20px
   @media #{$large-up}
     width: calc(100% - 300px)
+  @media #{$xxlarge-up}
+    & > *
+      max-width: 95%
+      margin: 0 auto
   +xxxlarge-up
     width: calc(100% - 400px)
+    & > *
+      max-width: 90%
+      margin: 0 auto
 
 .side-bar
   position: fixed
@@ -236,6 +248,9 @@ a
     +translate(0,0)
   +xxxlarge-up
     width: 400px
+  .indent-container
+    &:first-child
+      padding-top: 40px
 
 .sidebar-button
   position: fixed
