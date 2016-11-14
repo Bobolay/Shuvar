@@ -29,6 +29,9 @@
       +medium
       color: $blue
       margin: 10px 0 30px
+      @media #{$small-only}
+        line-height: 26px
+        margin: 10px 0 20px
     .main-text
       color: $table-header
       margin: 30px 0
@@ -39,6 +42,9 @@
       font-size: 12px
       color: $blue
       margin-top: 20px
+    @media #{$small-only}
+      .tags-container, .rules-of-quote
+        float: none
 
   .grid-container
     .grid-block
@@ -74,9 +80,13 @@
         line-height: 1
         margin-top: 10px
       &.go-prev
+        .text
+          text-align: left
         svg
           +translate(20%,-50%)
       &.go-next
+        .text
+          text-align: right
         svg
           +translate(-120%,-50%)
       &:hover

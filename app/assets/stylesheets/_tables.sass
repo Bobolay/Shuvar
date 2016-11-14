@@ -21,7 +21,7 @@ table.analytics-table
       position: relative
       width: 20px
       height: 20px
-      top: 5px
+      // top: 0px
       display: none
   .growth
     color: $green
@@ -30,6 +30,7 @@ table.analytics-table
         display: inline-block
         +rotate(-90deg)
         fill: $green
+        vertical-align: middle
   .decrease
     color: $red
     svg
@@ -37,12 +38,14 @@ table.analytics-table
         display: inline-block
         +rotate(90deg)
         fill: $red
+        vertical-align: middle
   .equal
     color: $dark-grey
     svg
       &:nth-child(n+2)
         display: inline-block
         fill: $dark-grey
+        vertical-align: middle
   th
     @extend .smaller-bold
     color: white

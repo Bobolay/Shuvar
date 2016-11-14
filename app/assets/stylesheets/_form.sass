@@ -112,6 +112,8 @@ form
   .textarea-container
     .input-field
       padding: 0
+      @media #{$small-only}
+        padding: 0 20px 0 40px
       textarea
         border: 1px solid rgba($navy, 0.3)
         width: 100%
@@ -124,11 +126,17 @@ form
           outline: none
         &:focus ~ label, &.used ~ label
           display: none
+        @media #{$small-only}
+          margin-top: 30px
       label
         top: 20px
         left: 20px
         color: $navy
         opacity: 0.75
+        @media #{$small-only}
+          left: 60px
   button
     margin: 10px
     clear: both
+    @media #{$small-only}
+      margin: 25px

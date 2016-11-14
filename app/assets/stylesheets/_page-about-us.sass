@@ -16,8 +16,6 @@
     margin: 0 auto
     padding-top: 100px
     text-align: center
-    @media #{$small-only}
-      max-width: 300px
     svg
       width: 225px
       height: 26px
@@ -28,6 +26,12 @@
       color: $navy
       font-size: 18px
       line-height: 26px
+    @media #{$small-only}
+      max-width: 300px
+      padding-top: 50px
+      p
+        line-height: 24px
+        margin-bottom: 20px
 
   .our-goals-container
     .grid-block
@@ -59,6 +63,8 @@
       height: 200px
       @media #{$small-only}
         width: calc(50% - 10px)
+        height: 220px
+        padding: 0 5px
       svg
         width: 80px
         height: 80px
@@ -66,6 +72,8 @@
         color: $navy
         max-width: 200px
         margin: 10px auto
+    @media #{$small-only}
+      padding: 30px 10px
   
   .our-partners
     margin-top: 80px
@@ -100,6 +108,7 @@
     .smaller
       color: $navy
       margin-top: 10px
+      margin-bottom: 30px
     .photo
       float: left
       width: 40%
@@ -113,6 +122,8 @@
       float: left
       width: 60%
       padding: 40px
+    .main-title
+      text-align: center
     .button
       float: none
       position: absolute
@@ -121,3 +132,17 @@
       @media #{$small-only}
         left: 10px
         bottom: 10px
+    @media #{$small-only}
+      display: block
+      .photo, .indent-container
+        float: none
+        width: 100%
+      .photo
+        &:after
+          padding-bottom: 50%
+      .indent-container
+        padding: 20px
+      .button
+        position: relative
+        bottom: initial
+        left: initial
