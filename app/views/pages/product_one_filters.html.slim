@@ -1,0 +1,36 @@
+.top-nav.shadow
+  = render "topnav"
+
+.side-nav.shadow
+  = render "sidenav"
+
+.main-wrapper
+
+  .clearfix
+
+    .main-container
+    
+      p content
+      
+    .side-bar.shadow
+
+      .indent-container.product-full-report-container
+        img src=asset_path('photo/top/top9.jpg')
+        p.product-name помідор
+        p.smaller Замовити повний звіт по даному продукту, який підготують наші менджери:
+        a.button замовити
+
+      .line-separator
+
+      .indent-container
+
+        .filter-country
+          p.small-title
+          
+
+  .footer
+    = render "footer"
+
+.sidebar-button
+  = inline_svg "svg/more.svg"
+  = inline_svg "svg/sidebar-arrow.svg"

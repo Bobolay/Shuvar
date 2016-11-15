@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   controller :pages do
     get "top", action: "top"
+    get "product_one", action: "product_one"
+    get "product_one_filters", action: "product_one_filters"
     get "analytics_main", action: "analytics_main"
     get "analytics_price", action: "analytics_price"
     get "analytics_volume", action: "analytics_volume"

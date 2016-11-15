@@ -1,0 +1,109 @@
+.top-nav.shadow
+  = render "topnav"
+
+.side-nav.shadow
+  = render "sidenav"
+
+.main-wrapper
+
+  .clearfix
+
+    .main-container
+    
+      = render "page_product_one_content"
+      
+    .side-bar.shadow
+
+      .indent-container.product-full-report-container
+        img src=asset_path('photo/top/top9.jpg')
+        p.product-name помідор
+        p.smaller Замовити повний звіт по даному продукту, який підготують наші менджери:
+        a.button замовити
+
+      .line-separator
+
+      .indent-container
+        p.small-title Коротка інформація:
+
+        .grid-container.product-short-info-container
+          .grid-block
+            p.smaller Динаміка ціни:
+            .value.growth
+              = inline_svg "svg/arrow-right.svg"
+              = inline_svg "svg/arrows-equal.svg"
+              span 5%
+          .grid-block
+            p.smaller Обсяги на ринку тонн:
+            .value
+              span 245
+
+        p.text-with-bold-span
+          | Мінімальна вартість 
+          span на 28 жовтня:
+
+        .tab-container.product-price-tab
+          .tab-controls.clearfix
+            p.tab-control.active роздріб
+            p.tab-control гурт
+          .tab-contents
+            .tab-content.active
+              .clearfix
+                .left-text
+                  p.small-title Львів
+                  p.regular Шувар
+                .right-text
+                  p.price
+                    | 24,52 
+                    span грн
+              .clearfix
+                .left-text
+                  p.small-title Київ
+                  p.regular Столичний
+                .right-text
+                  p.price
+                    | 27,24 
+                    span грн
+              .clearfix
+                .left-text
+                  p.small-title Варшава
+                  p.regular Броніше
+                .right-text
+                  p.price
+                    | 32,55 
+                    span грн
+            .tab-content
+              .clearfix
+                .left-text
+                  p.small-title Варшава
+                  p.regular Броніше
+                .right-text
+                  p.price
+                    | 32,55 
+                    span грн
+              .clearfix
+                .left-text
+                  p.small-title Київ
+                  p.regular Столичний
+                .right-text
+                  p.price
+                    | 27,24 
+                    span грн
+              .clearfix
+                .left-text
+                  p.small-title Львів
+                  p.regular Шувар
+                .right-text
+                  p.price
+                    | 24,52 
+                    span грн
+
+      .line-separator
+
+      = render "expert_view"
+
+  .footer
+    = render "footer"
+
+.sidebar-button
+  = inline_svg "svg/more.svg"
+  = inline_svg "svg/sidebar-arrow.svg"

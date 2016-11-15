@@ -18,14 +18,14 @@
           input.datepicker
           span &mdash;
           input.datepicker
-      .tab-container.diagram-container
+      .tab-container
         .tab-controls.clearfix
           p.tab-control.active графік ціни
           p.tab-control обсяги продукту
-        .tab-contents.diagrams
-          .tab-content.diagram.active
+        .tab-contents
+          .tab-content.active
             img src=asset_path('photo/diagram-1.png')
-          .tab-content.diagram
+          .tab-content
             img src=asset_path('photo/diagram-2.png')
       .clearfix
         a.panel-button
@@ -53,7 +53,7 @@
       .map-container
         = inline_svg "svg/map.svg"
       .info-statistics
-        p.description
+        p.text-with-bold-span
           | Виробництво картоплі у області з 
           span 20 січня 2016 
           | по 

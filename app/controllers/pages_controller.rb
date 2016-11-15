@@ -11,6 +11,14 @@ class PagesController < ApplicationController
 
   end
 
+  def product_one
+
+  end
+
+  def product_one_filters
+
+  end
+
   def analytics_main
 
   end

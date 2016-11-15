@@ -58,6 +58,8 @@ a
   @extend .smaller
   +bold
 
+
+
 .img-block
   position: relative
   overflow: hidden
@@ -175,12 +177,11 @@ a
   height: 40px
   margin-top: 30px
 
-.info-statistics
-  .description
-    font-size: 14px
-    color: $dark
-    span
-      +bold
+.text-with-bold-span
+  font-size: 14px
+  color: $dark
+  span
+    +bold
 
 .line-separator
   border-top: none
@@ -285,3 +286,42 @@ a
         opacity: 1
   @media #{$large-up}
     display: none
+
+.breadcrumbs
+  font-size: 12px
+  +medium
+  color: $navy
+  span
+    color: $medium-grey
+
+.tab-container
+  .tab-controls
+    .tab-control
+      float: left
+      width: 50%
+      padding: 10px 0
+      margin-top: 10px
+      text-align: center
+      font-size: 14px
+      text-transform: uppercase
+      color: $grey
+      border-bottom: 2px solid $grey
+      cursor: pointer
+      +medium
+      &.active
+        border-bottom: 2px solid $blue
+        color: $blue
+  .tab-contents
+    position: relative
+    width: 100%
+    margin-top: 30px
+    .tab-content
+      display: none
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      &.active
+        display: block
+        position: relative
