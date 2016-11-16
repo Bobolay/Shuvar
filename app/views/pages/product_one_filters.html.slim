@@ -25,8 +25,72 @@
       .indent-container
 
         .filter-country
-          p.small-title
-          
+          p.small-title Вибір країн:
+          .clearfix
+            p.country
+              | Україна
+              span = inline_svg "svg/cross.svg"
+            p.country
+              | Америка
+              span = inline_svg "svg/cross.svg"
+            p.country
+              | Германія
+              span = inline_svg "svg/cross.svg"
+          select
+            option Італія
+            option Польща
+            option Данія
+            option Норвегія
+            option Колумбія
+
+        .filter-period
+          p.small-title Період:
+          .date-field
+            span з
+            input.datepicker
+            = inline_svg "svg/calendar.svg"
+          .date-field
+            span по
+            input.datepicker
+            = inline_svg "svg/calendar.svg"
+
+        .filter-market
+          p.small-title Вибір ринків:
+          .filter-option.checkbox
+            input#market-1 type="checkbox"
+            label for="market-1" Шувар
+            .check
+          .filter-option.checkbox
+            input#market-2 type="checkbox"
+            label for="market-2" Оболонь
+            .check
+          .filter-option.checkbox
+            input#market-3 type="checkbox"
+            label for="market-3" Західний
+            .check
+
+        .filter-years
+          p.small-title Вибір років:
+          .filter-option.checkbox
+            input#year-1 type="checkbox"
+            label for="year-1" 2011
+            .check
+          .filter-option.checkbox
+            input#year-2 type="checkbox"
+            label for="year-2" 2012
+            .check
+          .filter-option.checkbox
+            input#year-3 type="checkbox"
+            label for="year-3" 2013
+            .check
+          .filter-option.checkbox
+            input#year-4 type="checkbox"
+            label for="year-4" 2014
+            .check
+          .filter-option.checkbox
+            input#year-5 type="checkbox"
+            label for="year-5" 2015
+            .check
 
   .footer
     = render "footer"
