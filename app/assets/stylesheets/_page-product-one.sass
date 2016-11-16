@@ -187,3 +187,41 @@
     input
       &:checked ~ label
         color: $blue
+
+.filter-all-container
+  background-color: $navy
+  .small-title
+    color: $white
+    margin-bottom: 5px
+    margin-top: 20px
+    opacity: 0.6
+  .filter-option
+    &:before
+      display: none
+    &:first-child
+      margin-top: -20px
+      padding: 5px 0
+      svg
+        top: 15px
+        +scale(1.2)
+      &:after
+        content: ''
+        position: absolute
+        width: 150%
+        left: -25%
+        top: 0
+        height: 100%
+        background-color: $dark-navy
+    label
+      color: white
+      margin-left: 0
+      padding: 5px 0
+    svg
+      fill: $dark-grey
+      left: initial
+      right: 0
+      +transition(0.2s)
+      z-index: 1
+    &:hover
+      svg
+        fill: white

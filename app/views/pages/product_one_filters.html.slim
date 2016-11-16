@@ -92,6 +92,32 @@
             label for="year-5" 2015
             .check
 
+        .indent-container.filter-all-container
+          .filter-option
+            label Очистити всі фільтри
+            = inline_svg "svg/cross.svg"
+          p.small-title Вибір країн:
+          .filter-option
+            label Україна
+            = inline_svg "svg/cross.svg"
+          .filter-option
+            label Італія
+            = inline_svg "svg/cross.svg"
+          p.small-title Вибір ринків:
+          .filter-option
+            label Оболонь
+            = inline_svg "svg/cross.svg"
+          p.small-title Вибір років:
+          .filter-option
+            label 2013
+            = inline_svg "svg/cross.svg"
+          .filter-option
+            label 2014
+            = inline_svg "svg/cross.svg"
+          .filter-option
+            label 2015
+            = inline_svg "svg/cross.svg"
+
   .footer
     = render "footer"
 
