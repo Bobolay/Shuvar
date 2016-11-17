@@ -16,8 +16,6 @@ $(document).on "ready", ->
 
 
 
-
-
   $sidebar_button = $('.sidebar-button')
   $side_bar = $('.side-bar')
 
@@ -33,3 +31,12 @@ $(document).on "ready", ->
       $('body').removeClass('overflow')
     {except: ".sidebar-button, .side-bar"}
   )
+
+
+  #   all filters
+
+  $(".filter-all-container .filter-option").on "click", ->
+    $(this).removeClass('visible')
+
+  $(".filter-country .country span").on "click", ->
+    $(this).parent().removeClass('visible')

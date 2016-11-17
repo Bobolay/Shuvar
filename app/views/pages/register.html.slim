@@ -1,0 +1,36 @@
+.top-nav.shadow
+  = render "topnav"
+
+.side-nav.shadow
+  = render "sidenav"
+
+.main-wrapper
+
+  .clearfix
+
+    .main-container
+      = render "page_register_content"
+
+    .side-bar.shadow
+
+      = render "product_category_on_sidebar"
+
+      .line-separator
+
+      = render "expert_view"
+
+      .indent-container.clearfix
+        a.see-more переглянути всі
+
+      .line-separator
+
+      = render "advertisement"
+
+
+  .footer
+    = render "footer"
+
+
+.sidebar-button
+  = inline_svg "svg/more.svg"
+  = inline_svg "svg/sidebar-arrow.svg"

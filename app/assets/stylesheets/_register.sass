@@ -1,0 +1,41 @@
+.page-register-content
+  padding: 40px
+  @media #{$small-only}
+    padding: 20px
+
+  .smaller-medium
+    color: $blue
+
+  .grid-container
+    margin-bottom: 30px
+  .inputs-container
+    .input-field
+      padding: 20px 0
+      .icon
+        svg
+          left: initial
+          right: 0
+  .grid-block
+    &:first-child
+      .input-field
+        @media #{$medium-up}
+          margin-right: 20px
+    &:nth-child(2)
+      .input-field
+        @media #{$medium-up}
+          margin-left: 20px
+    &:nth-child(3)
+      width: calc(100% - 20px)
+      margin-top: -10px
+
+  #google-map
+    height: 300px
+
+  .field-to-fill
+    color: $medium-grey
+    font-size: 11px
+    font-style: italic
+    float: right
+    margin-top: 20px
+  .button
+    margin-top: 20px

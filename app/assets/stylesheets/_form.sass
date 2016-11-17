@@ -82,6 +82,31 @@
     +transition(0.25s)
   input:focus ~ svg, input.used ~ svg
     fill: $blue
+  input:focus ~ .match-categories-container, input.used ~ .match-categories-container
+    display: block
+  .match-categories-container
+    position: absolute
+    width: 200px
+    top: 70px
+    left: 40px
+    display: none
+    &:before
+      content: ''
+      position: absolute
+      left: 20px
+      top: -5px
+      width: 10px
+      height: 10px
+      +rotate(45deg)
+      background-color: white
+    .smaller-medium
+      color: $navy
+      position: relative
+      margin: 10px 15px
+      span
+        position: absolute
+        top: 0
+        right: 0
 
 form
   .grid-block
@@ -102,13 +127,26 @@ form
       input:focus ~ label, input.used ~ label
         top: 10px
         font-size: 12px
-      svg
+      .icon
+        svg
+          position: absolute
+          width: 20px
+          height: 20px
+          top: 30px
+          left: 0
+          fill: $blue
+      select
+        padding: 10px 0
+        & ~ label
+          left: 0
+          top: 10px
+      .select-arrow
         position: absolute
-        width: 20px
-        height: 20px
-        top: 30px
-        left: 0
-        fill: $blue
+        top: 25px
+        right: 0
+        svg
+          width: 10px
+          height: 5px
   .textarea-container
     .input-field
       padding: 0

@@ -1,0 +1,85 @@
+.indent-container
+
+  p.blue-title.blue-title-first Реєстрація
+
+  .shadow.page-register-content
+
+    p.smaller-medium Особисті дані
+    form.grid-container
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Прізвище та ім'я *
+          span.bar
+        .input-field
+          input
+          label Електронна скринька *
+          span.bar
+        .input-field
+          select
+            option Чоловік
+            option Жінка
+          label Стать
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Телефон *
+          span.bar
+        .input-field
+          input type="password"
+          label Пароль *
+          span.bar
+        .input-field
+          input
+          label День народження
+          span.bar
+          .icon = inline_svg "svg/calendar.svg"
+    p.smaller-medium Дані по компанію
+    form.grid-container
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Назва компанії *
+          span.bar
+        .input-field
+          select
+            option Продаж
+            option Обслуговування
+            option Інше
+          label Сфера діяльності *
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+      .grid-block.inputs-container
+        .input-field
+          select
+            option ФОП
+            option ЮО
+            option ФО
+          label Форма власності *
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+        .input-field
+          select
+            option Овочі
+            option Фрукти
+            option Риба
+            option М'ясо
+            option Молочка
+            option Квіти
+          label Асортиментна група *
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Адреса *
+          span.bar
+
+    #google-map
+
+    .clearfix
+      p.field-to-fill поля обов'язкові для заповнення
+    .clearfix
+      a.button зареєструватись

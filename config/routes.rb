@@ -14,6 +14,8 @@ Rails.application.routes.draw do
     get "news_one", action: "news_one"
     get "about_us", action: "about_us"
     get "contacts", action: "contacts"
+    get "register", action: "register"
+
   end
 
   # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

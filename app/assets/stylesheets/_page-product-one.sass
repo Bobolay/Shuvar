@@ -100,6 +100,7 @@
     margin-bottom: 10px
   .country
     position: relative
+    display: none
     float: left
     color: $navy
     font-size: 14px
@@ -109,6 +110,8 @@
     padding-left: 10px
     padding-right: 35px
     line-height: 24px
+    &.visible
+      display: block
     span
       position: absolute
       display: flex
@@ -117,6 +120,7 @@
       width: 24px
       height: 24px
       background-color: $blue
+      cursor: pointer
       svg
         width: 10px
         height: 10px
@@ -196,6 +200,9 @@
     margin-top: 20px
     opacity: 0.6
   .filter-option
+    display: none
+    &.visible
+      display: block
     &:before
       display: none
     &:first-child

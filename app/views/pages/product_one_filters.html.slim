@@ -27,13 +27,13 @@
         .filter-country
           p.small-title Вибір країн:
           .clearfix
-            p.country
+            p.country.visible
               | Україна
               span = inline_svg "svg/cross.svg"
-            p.country
+            p.country.visible
               | Америка
               span = inline_svg "svg/cross.svg"
-            p.country
+            p.country.visible
               | Германія
               span = inline_svg "svg/cross.svg"
           select
@@ -93,28 +93,28 @@
             .check
 
         .indent-container.filter-all-container
-          .filter-option
+          .filter-option.visible
             label Очистити всі фільтри
             = inline_svg "svg/cross.svg"
           p.small-title Вибір країн:
-          .filter-option
+          .filter-option.visible
             label Україна
             = inline_svg "svg/cross.svg"
-          .filter-option
+          .filter-option.visible
             label Італія
             = inline_svg "svg/cross.svg"
           p.small-title Вибір ринків:
-          .filter-option
+          .filter-option.visible
             label Оболонь
             = inline_svg "svg/cross.svg"
           p.small-title Вибір років:
-          .filter-option
+          .filter-option.visible
             label 2013
             = inline_svg "svg/cross.svg"
-          .filter-option
+          .filter-option.visible
             label 2014
             = inline_svg "svg/cross.svg"
-          .filter-option
+          .filter-option.visible
             label 2015
             = inline_svg "svg/cross.svg"
 
