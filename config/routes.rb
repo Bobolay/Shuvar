@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get "about_us", action: "about_us"
     get "contacts", action: "contacts"
     get "register", action: "register"
+    get "personal_account", action: "personal_account"
 
   end
 

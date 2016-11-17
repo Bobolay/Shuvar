@@ -1,0 +1,27 @@
+.top-nav.shadow
+  = render "topnav"
+
+.side-nav.shadow
+  = render "sidenav"
+
+.main-wrapper
+
+  .clearfix
+
+    .main-container
+      = render "page_personal_account_content"
+
+    .side-bar.shadow
+
+      .line-separator
+
+      = render "advertisement"
+
+
+  .footer
+    = render "footer"
+
+
+.sidebar-button
+  = inline_svg "svg/more.svg"
+  = inline_svg "svg/sidebar-arrow.svg"

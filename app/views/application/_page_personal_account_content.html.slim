@@ -1,0 +1,86 @@
+.indent-container
+
+  p.blue-title.blue-title-first Дані про компанію
+
+  .shadow.page-register-content
+
+    form.grid-container
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Назва компанії
+          span.bar
+        .input-field
+          select
+            option Продаж
+            option Сфера обслуговування
+            option Інше
+          label Сфера діяльності
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+      .grid-block.inputs-container
+        .input-field
+          select
+            option ФОП
+            option ЮО
+            option ФО
+          label Форма власності
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+        .input-field
+          select
+            option Овочі
+            option Фрукти
+            option Риба
+            option М'ясо
+            option Молочка
+            option Квіти
+          label Асортиментна група
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Адреса
+          span.bar
+    #google-map
+    .clearfix
+      a.button зберегти
+
+  p.blue-title Особисті дані
+
+  .shadow.page-register-content
+
+    form.grid-container
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Прізвище та ім'я
+          span.bar
+        .input-field
+          select
+            option Чоловік
+            option Жінка
+          label Стать
+          span.bar
+          .select-arrow = inline_svg "svg/select-arrow.svg"
+        .input-field
+          input
+          label Електронна скринька
+          span.bar
+      .grid-block.inputs-container
+        .input-field
+          input
+          label Телефон
+          span.bar
+        .input-field
+          input
+          label День народження
+          span.bar
+          .icon = inline_svg "svg/calendar.svg"
+        .input-field
+          input type="password"
+          label Пароль
+          span.bar
+    .clearfix
+      a.button зберегти
