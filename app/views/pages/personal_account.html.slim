@@ -12,8 +12,24 @@
       = render "page_personal_account_content"
 
     .side-bar.shadow
+      
+      .indent-container.balance-container
+        p.small-title Баланс:
+        p.balance
+          span &#8372; 
+          | 285
+        a.button поповнити
 
       .line-separator
+
+      .indent-container.account-navigation-container
+        p.small-title Навігація:
+        a.smaller-medium
+          | Підписка та новини
+          span = inline_svg "svg/file-document.svg"
+        a.smaller-medium
+          | Особисті дані
+          span = inline_svg "svg/person.svg"
 
       = render "advertisement"
 

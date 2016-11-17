@@ -41,3 +41,39 @@
     margin-top: 20px
   .button
     margin-top: 20px
+
+.balance-container
+  .small-title
+    margin-bottom: 10px
+  .balance
+    font-size: 28px
+    color: $table-header
+    +bold
+    margin-bottom: 10px
+    span
+      color: $blue
+  .button
+    float: none
+
+.account-navigation-container
+  .small-title
+    margin-bottom: 10px
+  .smaller-medium
+    color: $dark-grey
+    position: relative
+    padding: 10px 0 10px 35px
+    cursor: pointer
+    +transition(0.1s)
+    span
+      position: absolute
+      left: 0
+      top: 5px
+      svg
+        fill: $dark-grey
+        width: 24px
+        height: 24px
+        +transition(0.1s)
+    &:hover
+      color: $blue
+      span svg
+        fill: $blue
