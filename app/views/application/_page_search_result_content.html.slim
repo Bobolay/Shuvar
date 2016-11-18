@@ -1,0 +1,66 @@
+.indent-container
+
+  p.blue-title.blue-title-first Результати пошуку
+  p.small-title.italic
+    | На запит 
+    span Капуста 
+    | знайдено 
+    span 6 
+    | збігів
+  .tab-container
+    .tab-controls.clearfix
+      p.tab-control.active
+        | Продуктів (
+        span 2
+        | )
+      p.tab-control
+        | Новин (
+        span 4
+        | )
+    .tab-contents
+      .tab-content.active.page-analytics-main-content
+
+        .grid-container
+          
+          a.grid-block.shadow href=product_one_path
+            img src=asset_path("photo/products/vegetable-1.png")
+            p.product-name Морква
+            .hover-block
+              = inline_svg "svg/arrow-right.svg"
+              p.details детально
+          a.grid-block.shadow href=product_one_path
+            img src=asset_path("photo/products/vegetable-2.png")
+            p.product-name Капуста
+            .hover-block
+              = inline_svg "svg/arrow-right.svg"
+              p.details детально
+
+      .shadow.horizontal-news-container.tab-content
+
+        .news-block
+          .photo
+            .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+          .text
+            p.title У першому півріччі обсяг продажів м'яса птиці становив 5.9 млрд грн: які галузі в лідерах
+            p.date 17 серпня 2016
+
+        .news-block
+          .photo
+            .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+          .text
+            p.title У першому півріччі обсяг продажів м'яса птиці становив 5.9 млрд грн: які галузі в лідерах
+            p.date 17 серпня 2016
+
+        .news-block
+          .photo
+            .bg-img style="background-image: url(#{asset_path('photo/news-img-3.jpg')})"
+          .text
+            p.title У першому півріччі обсяг продажів м'яса птиці становив 5.9 млрд грн: які галузі в лідерах
+            p.date 17 серпня 2016
+            
+        .news-block
+          .photo
+            .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+          .text
+            p.title У першому півріччі обсяг продажів м'яса птиці становив 5.9 млрд грн: які галузі в лідерах
+            p.date 17 серпня 2016

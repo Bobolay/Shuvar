@@ -63,6 +63,10 @@ class PagesController < ApplicationController
 
   end  
 
+  def search_result
+
+  end  
+
   private
 
   def set_page_instance
