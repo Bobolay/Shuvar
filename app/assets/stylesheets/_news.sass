@@ -55,3 +55,40 @@
     @media #{$small-only}
       width: calc(100% - 10px) !important
       height: 300px
+
+.horizontal-news-container
+  margin-top: 30px
+  .news-block
+    +clearfix
+    padding: 20px
+    border-bottom: 1px solid $light-grey
+    @media #{$small-only}
+      padding: 10px
+    & *
+      +transition(0.3s)
+    .photo
+      position: relative
+      float: left
+      width: 100px
+      height: 80px
+      overflow: hidden
+    .text
+      padding-left: 120px
+      .title
+        +medium
+        color: $dark-navy
+        line-height: 22px
+        @media #{$small-only}
+          font-size: 14px
+          line-height: 16px
+      .date
+        font-size: 12px
+        +medium
+        color: $dark-grey
+        margin-top: 10px
+    &:hover
+      background-color: $blue
+      .bg-img
+        +scale(1.05)
+      .title, .date
+        color: white

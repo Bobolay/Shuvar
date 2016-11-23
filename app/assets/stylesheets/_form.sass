@@ -42,6 +42,7 @@
 .side-nav
   .input-field
     padding: 20px
+    margin-top: -15px
     input
       color: white
       border-bottom: 1px solid white
@@ -83,13 +84,15 @@
   input:focus ~ svg, input.used ~ svg
     fill: $blue
   input:focus ~ .match-categories-container, input.used ~ .match-categories-container
-    display: block
+    // display: block
   .match-categories-container
     position: absolute
     width: 200px
     top: 70px
     left: 40px
     display: none
+    &.visible
+      display: block
     &:before
       content: ''
       position: absolute

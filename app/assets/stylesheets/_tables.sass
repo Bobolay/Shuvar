@@ -5,47 +5,64 @@ table.analytics-table
   
   tr
     border-bottom: 1px solid $light-grey
-  .product-row
-    counter-increment: rowNumber
-    &:hover
-      background-color: $blue
-      td
-        color: white !important
-        svg
-          fill: white !important
-    td:first-child
-      &:after
-        content: counter(rowNumber)
+
   .growth, .decrease, .equal
+    position: relative
+  .first-svg, .second-svg
+    display: none
     svg
       position: relative
       width: 20px
       height: 20px
-      // top: 0px
-      display: none
+      vertical-align: middle
   .growth
     color: $green
-    svg
-      &:first-child
-        display: inline-block
+    .first-svg
+      display: inline-block
+      svg
         +rotate(-90deg)
         fill: $green
-        vertical-align: middle
   .decrease
     color: $red
-    svg
-      &:first-child
-        display: inline-block
+    .first-svg
+      display: inline-block
+      svg
         +rotate(90deg)
         fill: $red
-        vertical-align: middle
   .equal
     color: $dark-grey
-    svg
-      &:nth-child(n+2)
-        display: inline-block
+    .second-svg
+      display: inline-block
+      svg
         fill: $dark-grey
-        vertical-align: middle
+
+  .product-row
+    counter-increment: rowNumber
+    cursor: pointer
+    .hover-svg
+      position: absolute
+      opacity: 0
+      top: 10px
+      right: 30px
+      +transition(0.3s)
+      display: none
+      svg
+        fill: $blue
+      @media #{$xlarge-up}
+        display: block
+    &:hover
+      background: $blue
+      td
+        color: white !important
+        svg
+          fill: white !important
+      .hover-svg
+        opacity: 1
+        right: 20px
+    td:first-child
+      &:after
+        content: counter(rowNumber)
+
   th
     @extend .smaller-bold
     color: white
@@ -69,7 +86,6 @@ table.analytics-table
     @media #{$small-only}
       display: none
   td.subheader-cell
-    // background-color: $grey
     color: $navy
     line-height: 1
     span
@@ -101,6 +117,7 @@ table.analytics-table
         float: left
         text-transform: uppercase
         font-weight: bold
+
   .product-category
     padding: 0
     td
