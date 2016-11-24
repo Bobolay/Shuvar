@@ -1,6 +1,7 @@
 doctype html
 html
   head
+
     title
       | Shuvar
     meta name="description" content="some text goes here"
@@ -9,7 +10,23 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     = stylesheet_link_tag    "home.build", media: 'all', 'data-turbolinks-track' => true
     = csrf_meta_tags
+
   body
+
+    .top-nav.shadow
+      = render "topnav"
+
+    .side-nav.shadow
+      = render "sidenav"
+
     = yield
+
+    .footer
+      = render "footer"
+
+    .sidebar-button
+      = inline_svg "svg/more.svg"
+      = inline_svg "svg/sidebar-arrow.svg"
+
     script src="http://maps.googleapis.com/maps/api/js"
     = javascript_include_tag "home.build", 'data-turbolinks-track' => true

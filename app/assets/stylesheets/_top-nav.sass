@@ -16,7 +16,7 @@
     width: 50px
     height: 50px
     padding: 18px 15px
-    background-color: #303d44
+    background-color: $table-header
     border-right: 1px solid rgba(0,0,0,0.1)
     .hamburger
       +burger(20px, 2px, 4px, white, 1px)
@@ -40,9 +40,11 @@
       position: relative
       top: 4px
     @media #{$small-only}
-      width: 30%
+      // width: 30%
+      width: 25%
       svg
-        width: 80%
+        // width: 80%
+        width: 85%
     @media #{$xlarge-up}
       width: 250px
 
@@ -75,19 +77,19 @@
       float: left
       font-size: 14px
       line-height: 50px
-      width: 40px
+      width: 50px
       color: $light-blue
       text-align: center
       font-weight: 500
       +transition(0.1s)
       &:hover, &.active
         color: $blue
-    .popup-button
+      @media #{$small-only}
+        width: 40px
+    .popup-button, .mobile-search-button
       float: left
       line-height: 50px
       width: 50px
-      background-color: $blue
-      margin-left: 20px
       svg
         position: relative
         fill: white
@@ -95,3 +97,7 @@
         height: 20px
         left: 14px
         top: 4px
+    .popup-button
+      background-color: $blue
+    .mobile-search-button
+      background-color: $table-header

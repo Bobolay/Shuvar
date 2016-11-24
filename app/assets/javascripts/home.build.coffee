@@ -15,4 +15,6 @@
 
 #= require tabs
 
+#= require filters
+
 #= require table

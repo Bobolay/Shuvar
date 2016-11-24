@@ -7,9 +7,12 @@
   background-color: $grey
   color: $dark-grey
   clear: both
-  z-index: 5
+  // z-index: 5
+  width: 100%
   @media #{$small-only}
     padding: 0 10px
+  @media #{$xlarge-up}
+    padding: 0 20px 0 270px
   .left-part
     float: left
     +transition(0.25s)
