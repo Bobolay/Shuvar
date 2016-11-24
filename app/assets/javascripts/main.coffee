@@ -43,6 +43,6 @@ $(document).on "ready", ->
 
   $.clickOut(".top-nav .search-input-field",
     ()->
-      $(".match-categories-container").removeClass('visible')
+      $(".top-nav .search-input-field .match-categories-container").removeClass('visible')
     {except: ".top-nav .search-input-field"}
   )

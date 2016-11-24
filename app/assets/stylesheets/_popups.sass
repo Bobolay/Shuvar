@@ -1,0 +1,47 @@
+.mobile-search-popup
+  position: fixed
+  display: none
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: white
+  z-index: 111
+  .search-background
+    position: absolute
+    top: 0
+    left: 0
+    background-color: $light-grey
+    width: 100%
+    height: 50px
+  .mobile-search-popup-close
+    position: absolute
+    top: 0
+    left: 0
+    width: 50px
+    height: 50px
+    padding: 10px
+    svg
+      +rotate(180deg)
+      fill: $navy
+  .search-input-field
+    padding-left: 50px
+    input
+      border-bottom: none
+      padding: 0
+      margin-left: 0
+      line-height: 50px
+    label
+      font-size: 16px
+      top: 12px
+      padding-left: 0
+      padding: 0
+  .match-categories-container
+    top: 90px
+    left: 0
+    width: 100%
+  .small-title
+    margin-top: 10px
+    color: $light-blue
+    font-style: italic
+    padding-left: 15px

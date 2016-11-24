@@ -86,7 +86,8 @@
         color: $blue
       @media #{$small-only}
         width: 40px
-    .popup-button, .mobile-search-button
+        font-size: 12px
+    .popup-button, .mobile-search-popup-button
       float: left
       line-height: 50px
       width: 50px
@@ -99,5 +100,10 @@
         top: 4px
     .popup-button
       background-color: $blue
-    .mobile-search-button
+      @media #{$medium-up}
+        margin-left: 20px
+    .mobile-search-popup-button
       background-color: $table-header
+      margin-left: 10px
+      @media #{$medium-up}
+        display: none

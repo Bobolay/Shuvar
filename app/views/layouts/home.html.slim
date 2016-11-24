@@ -28,5 +28,7 @@ html
       = inline_svg "svg/more.svg"
       = inline_svg "svg/sidebar-arrow.svg"
 
+    = render "mobile_search_popup"
+
     script src="http://maps.googleapis.com/maps/api/js"
     = javascript_include_tag "home.build", 'data-turbolinks-track' => true

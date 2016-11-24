@@ -18,3 +18,5 @@
 #= require filters
 
 #= require table
+
+#= require mobile-search-popup
