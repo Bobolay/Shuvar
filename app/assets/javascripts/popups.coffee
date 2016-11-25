@@ -21,6 +21,16 @@ $(document).on "ready", ->
   $('.call-us-popup-button').on "click", ->
     $('.call-us-popup').toggleClass("visible")
 
+  $('.call-us-popup .button').on "click", ->
+    $(this).css("color","#029AE4")
+    $('.success').addClass("visible")
+    setTimeout (->
+      $('.success').removeClass("visible")
+    ), 3000
+    setTimeout (->
+      $('.call-us-popup .button').css("color","white")
+    ), 3800
+
   $.clickOut(".call-us-popup",
     ()->
       $(".call-us-popup").removeClass('visible')
