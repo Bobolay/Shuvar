@@ -1,0 +1,16 @@
+.call-us-popup
+
+  .call-us-container.indent-container
+    p.smaller
+      | Зателефонуйте нам
+      span = inline_svg "svg/phone.svg"
+    a href="tel:+380324567887" +38 032 456 7887
+    a href="tel:+380671231239" +38 067 123 3219
+
+  .leave-ur-number-container.indent-container   
+    .input-field
+      input
+      label Або вкажіть свій номер:
+      span.bar
+      = inline_svg "svg/pencil.svg"
+  a.button замовити

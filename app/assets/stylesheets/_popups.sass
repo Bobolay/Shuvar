@@ -21,6 +21,7 @@
     width: 50px
     height: 50px
     padding: 10px
+    z-index: 1
     svg
       +rotate(180deg)
       fill: $navy
@@ -45,3 +46,53 @@
     color: $light-blue
     font-style: italic
     padding-left: 15px
+
+.call-us-popup
+  position: fixed
+  width: 300px
+  top: 50px
+  right: 0
+  z-index: 99
+  +translate(0,-106%)
+  +transition(0.5s)
+  +animation-timing-function(cubic-bezier(0.86, 0, 0.07, 1))
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+  @media #{$small-only}
+    width: 90%
+    right: 5%
+  &.visible
+    +translate(0,0)
+  svg
+    fill: $dark-grey
+    width: 20px
+    height: 20px
+  .smaller
+    color: $dark-grey
+  .indent-container
+    padding: 30px 50px
+
+  .call-us-container
+    background: $avatar-background-color
+    .smaller
+      position: relative
+      margin-bottom: 10px
+      span
+        position: absolute
+        left: -27px
+        top: -1px
+        width: 20px
+        height: 20px
+    a
+      color: white
+      &:hover
+        color: $blue
+
+  .leave-ur-number-container
+    background: $dark-navy
+
+  .button
+    display: block
+    border-radius: 0
+    float: none
+    line-height: 60px
+

@@ -164,6 +164,7 @@ a
   +bold
   line-height: 40px
   padding: 0 20px
+  cursor: pointer
   svg
     position: relative
     top: 8px
@@ -289,9 +290,14 @@ a
 .breadcrumbs
   font-size: 12px
   +medium
-  color: $navy
+  a
+    display: inline-block
+    color: $navy
+    &:hover
+      color: $blue
   span
     color: $medium-grey
+    margin-left: 5px
 
 .tab-container
   .tab-controls

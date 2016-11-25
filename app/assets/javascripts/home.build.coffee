@@ -19,4 +19,4 @@
 
 #= require table
 
-#= require mobile-search-popup
+#= require popups

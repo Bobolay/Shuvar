@@ -2,8 +2,21 @@
 
   .expert-view-block
     position: relative
-    margin: 30px 0
+    padding: 15px 0
     +clearfix
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      height: 100%
+      width: 150%
+      top: 0
+      left: -25%
+      background-color: $blue
+      opacity: 0
+      +transition(0.3s)
+    *
+      +transition(0.3s)
     .photo
       position: relative
       float: left
@@ -16,6 +29,8 @@
     .text
       float: left
       width: calc(100% - 50px)
+      position: relative
+      z-index: 1
     .date
       font-size: 12px
       color: $dark-grey
@@ -27,3 +42,10 @@
       margin-left: 20px
       +medium
       line-height: 17px
+    &:hover
+      &:before
+        opacity: 1
+      .bg-img
+        // +scale(1.5)
+      *
+        color: white

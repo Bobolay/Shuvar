@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get "analytics_foreign", action: "analytics_foreign"
     get "news", action: "news"
     get "news_one", action: "news_one"
+    get "expert_view", action: "expert_view"
     get "about_us", action: "about_us"
     get "contacts", action: "contacts"
     get "register", action: "register"

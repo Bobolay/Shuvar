@@ -5,12 +5,12 @@
     .breadcrumbs
       a href=news_path
         | Новини / 
-      span.current-new Новий завіз Малазійського винограду на територію України
+      span.current-new Експерти прогнозують подорожчання всіх продуктів
 
     .shadow.new-container
 
       .photo
-        .bg-img style="background-image: url(#{asset_path('photo/new-one-banner.jpg')})"
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
 
       .indent-container
         p.date.smaller-medium
@@ -18,7 +18,7 @@
           = inline_svg "svg/calendar.svg"
 
         p.new-name
-          | Новий завіз Малазійського винограду на територію України
+          | Зворушлива назва статті експерта
 
         .line-separator
 
@@ -32,10 +32,6 @@
         .line-separator
 
         .clearfix
-          .tags-container
-            = inline_svg "svg/tag.svg"
-            p.smaller-medium.tag Купівля
-            p.smaller-medium.tag.active Ринок
           a.rules-of-quote
             | Правила цитування
 
@@ -45,16 +41,16 @@
 
       .grid-block.shadow.go-prev
         .photo
-          .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+          .bg-img style="background-image: url(#{asset_path('photo/products/fruit-1.png')})"
           = inline_svg "svg/arrow-left.svg"
         .text
-          p.small-title Попередня новина
-          p.title Помідори максимально сильно почервоніли цього року
+          p.small-title Попередня стаття
+          p.title Думка попереднього експерта
           
       .grid-block.shadow.go-next
         .text
-          p.small-title Наступна новина
-          p.title Ріст ціна на помідори цьогорічно буде стрімким
+          p.small-title Наступна стаття
+          p.title Думка наступного експерта
         .photo
-          .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+          .bg-img style="background-image: url(#{asset_path('photo/products/fruit-8.png')})"
           = inline_svg "svg/arrow-right.svg"

@@ -63,6 +63,28 @@
       right: 15px
       fill: $blue
 
+.call-us-popup
+  .input-field
+    input
+      color: white
+      border-bottom: 1px solid $dark-grey
+      padding: 10px 20px 10px 0
+    label
+      color: $dark-grey
+      top: 10px
+    input:focus ~ label, input.used ~ label
+      top: -10px
+      font-size: 12px
+      color: $blue
+    svg
+      position: absolute
+      top: 10px
+      left: -27px
+      +transition(0.25s)
+    input:focus ~ svg, input.used ~ svg
+      right: 15px
+      fill: $blue
+
 .search-input-field
   @extend .input-field
   input

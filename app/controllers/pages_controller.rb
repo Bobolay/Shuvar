@@ -47,6 +47,11 @@ class PagesController < ApplicationController
 
   end
 
+  def expert_view
+
+  end
+
+
   def about_us
 
   end  
