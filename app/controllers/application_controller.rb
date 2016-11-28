@@ -15,4 +15,8 @@ class ApplicationController < ActionController::Base
   def render_not_found
     render template: "errors/not_found.html.slim"
   end
+
+  def show_view
+    render params[:path], layout: false
+  end
 end

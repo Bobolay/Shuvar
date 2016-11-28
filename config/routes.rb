@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: "pages#main"
 
+  get "views/*path", to: "application#show_view"
+
   controller :pages do
     get "top", action: "top"
     get "product_one", action: "product_one"

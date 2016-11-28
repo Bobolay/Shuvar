@@ -5,6 +5,8 @@
 #= require plugins/global
 #= require plugins/clickout
 
+#= require highcharts/highcharts.js
+
 #= require google-map
 
 #= require main
@@ -22,3 +24,5 @@
 #= require popups
 
 #= require dropdown
+
+#= require highchart
