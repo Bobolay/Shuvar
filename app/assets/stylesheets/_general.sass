@@ -330,3 +330,34 @@ a
       &.active
         display: block
         position: relative
+
+.dropdown-container
+  position: absolute
+  display: none
+  width: 100%
+  background: $light-grey
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  z-index: 1
+  &.visible
+    display: block
+  a
+    padding: 10px
+
+.download
+  position: relative
+  padding: 20px
+  .dropdown-container
+    width: 220px
+    top: 60px
+    right: 25px
+    padding: 5px
+    a
+      padding: 5px
+      color: $navy
+      &:hover
+        color: $blue
+  @media #{$small-only}
+    padding: 10px
+    .dropdown-container
+      right: 15px

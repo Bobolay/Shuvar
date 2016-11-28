@@ -19,8 +19,10 @@
     +translate(0,0)
 
   .avatar-container
+    position: relative
     background-color: $avatar-background-color
     padding: 20px 0
+    cursor: pointer
     .avatar-photo
       position: relative
       width: 80px
@@ -34,6 +36,27 @@
       text-transform: uppercase
       +medium
       text-align: center
+    svg
+      position: relative
+      top: 2px
+      width: 16px
+      height: 16px
+      margin-left: 5px
+      fill: white
+      +rotate(90deg)
+    .dropdown-container
+      width: 80%
+      left: 50%
+      +translate(-50%,0)
+      bottom: -60px
+      .go-to-account
+        text-transform: uppercase
+        color: $blue
+        background: white
+      .exit
+        color: $dark-grey
+        &:hover
+          color: $blue
 
   .small-title
     opacity: 0.3

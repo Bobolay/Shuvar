@@ -20,3 +20,5 @@
 #= require table
 
 #= require popups
+
+#= require dropdown
