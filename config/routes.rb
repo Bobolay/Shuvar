@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     get "contacts", action: "contacts"
     get "register", action: "register"
     get "personal_account", action: "personal_account"
+    get "personal_subscribe", action: "personal_subscribe"
     get "search_result", action: "search_result"
 
   end

@@ -36,3 +36,29 @@ $(document).on "ready", ->
       $(".call-us-popup").removeClass('visible')
     {except: ".call-us-popup-button, .call-us-popup"}
   )
+
+  #     S U B S C R I B E     P O P U P
+
+  $('.subscribe-content .unsubscribe').on "click", ->
+    $('.info-popup-for-subscribe').fadeIn()
+  $('.info-popup-for-subscribe .close-popup').on "click", ->
+    $('.info-popup-for-subscribe').fadeOut()
+
+  $.clickOut(".info-popup-for-subscribe .indent-container",
+    ()->
+      $(".info-popup-for-subscribe").fadeOut()
+    {except: ".info-popup-for-subscribe .indent-container, .subscribe-content .unsubscribe"}
+  )
+
+  #     P R O D U C T     R E P O R T     P O P U P
+
+  $('.product-full-report-container .button').on "click", ->
+    $('.info-popup-for-product-report').fadeIn()
+  $('.info-popup-for-product-report .close-popup').on "click", ->
+    $('.info-popup-for-product-report').fadeOut()
+
+  $.clickOut(".info-popup-for-product-report .indent-container",
+    ()->
+      $(".info-popup-for-product-report").fadeOut()
+    {except: ".info-popup-for-product-report .indent-container, .product-full-report-container .button"}
+  )

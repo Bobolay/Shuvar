@@ -68,6 +68,10 @@ class PagesController < ApplicationController
 
   end  
 
+  def personal_subscribe
+
+  end  
+
   def search_result
 
   end  

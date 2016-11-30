@@ -1,0 +1,182 @@
+.register-content
+  padding: 40px
+  @media #{$small-only}
+    padding: 20px
+
+  .smaller-medium
+    color: $blue
+
+  .grid-container
+    margin-bottom: 30px
+  .inputs-container
+    .input-field
+      padding: 20px 0
+      .icon
+        svg
+          left: initial
+          right: 0
+  .grid-block
+    &:first-child
+      .input-field
+        @media #{$medium-up}
+          margin-right: 20px
+    &:nth-child(2)
+      .input-field
+        @media #{$medium-up}
+          margin-left: 20px
+    &:nth-child(3)
+      width: calc(100% - 20px)
+      margin-top: -10px
+
+  #google-map
+    height: 300px
+    @media #{$small-only}
+      height: 200px
+
+  .field-to-fill
+    color: $medium-grey
+    font-size: 11px
+    font-style: italic
+    float: right
+    margin-top: 20px
+  .button
+    margin-top: 20px
+
+.balance-container
+  .small-title
+    margin-bottom: 10px
+  .balance
+    font-size: 28px
+    color: $table-header
+    +bold
+    margin-bottom: 10px
+    span
+      color: $blue
+  .button
+    float: none
+
+.account-navigation-container
+  .small-title
+    margin-bottom: 10px
+  .smaller-medium
+    color: $dark-grey
+    position: relative
+    padding: 10px 0 10px 35px
+    cursor: pointer
+    +transition(0.1s)
+    span
+      position: absolute
+      left: 0
+      top: 5px
+      svg
+        fill: $dark-grey
+        width: 24px
+        height: 24px
+        +transition(0.1s)
+    &:hover
+      color: $blue
+      span svg
+        fill: $blue
+
+.subscribe-content
+  .subscribe-block
+    position: relative
+    +clearfix
+    padding: 20px
+    cursor: pointer
+    +transition(0.3s)
+    @media #{$small-only}
+      padding: 20px 10px 10px 10px
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 20px
+      background: $grey
+      height: 1px
+      width: 80%
+      +transition(0.3s)
+      @media #{$small-only}
+        right: 0
+        width: 100%
+    &:last-child
+      &:before
+        display: none
+    .photo
+      position: relative
+      float: left
+      width: 80px
+      height: 80px
+      overflow: hidden
+      .bg-img
+        +transition(0.3s)
+    .text
+      padding-left: 120px
+      .title
+        +medium
+        color: $dark-navy
+        line-height: 22px
+        +transition(0.3s)
+        @media #{$small-only}
+          font-size: 14px
+          line-height: 16px
+      .smaller
+        font-style: italic
+        color: $light-blue
+        margin-top: 10px
+        +transition(0.3s)
+      ul
+        list-style: none
+        color: $light-blue
+        +transition(0.3s)
+        li
+          font-size: 14px
+          font-style: italic
+          +transition(0.3s)
+          &:before
+            content: '\2014'
+      .price
+        font-size: 14px
+        +medium
+        color: $dark-grey
+        margin-top: 10px
+        +transition(0.3s)
+        span
+          color: $blue
+          +medium
+          +transition(0.3s)
+    .unsubscribe
+      color: $blue
+      position: absolute
+      bottom: 0
+      right: 0
+      text-transform: uppercase
+      padding: 20px
+      +medium
+      font-size: 14px
+      line-height: 1
+      +transition(0.3s)
+      svg
+        margin-left: 5px
+        fill: $blue
+        +transition(0.3s)
+      @media #{$small-only}
+        position: relative
+        text-align: right
+        padding: 20px 0
+    &:hover
+      background-color: $blue
+      *
+        color: white
+      &:before
+        background-color: $blue
+      .bg-img
+        +scale(1.05)
+      .title, .price, .smaller
+        color: white
+      .price span
+        color: white
+      .unsubscribe
+        color: white
+        svg
+          fill: white

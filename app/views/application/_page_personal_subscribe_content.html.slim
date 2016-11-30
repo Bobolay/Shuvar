@@ -1,0 +1,85 @@
+.indent-container
+
+  p.blue-title.blue-title-first Ваша підписка
+
+  .shadow.subscribe-content
+
+    .subscribe-block
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+      .text
+        p.title Щомісячна аналітика по овочах
+        p.price
+          | Вартість: 
+          span 35 
+          | грн/міс
+      p.unsubscribe
+        | відписатись
+        = inline_svg "svg/cross.svg"
+    .subscribe-block
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+      .text
+        p.title Новини Шувар
+        p.price
+          | Вартість: 
+          span Безкоштовно
+      p.unsubscribe
+        | відписатись
+        = inline_svg "svg/cross.svg"
+
+
+  p.blue-title Підписатись на новини
+
+  .shadow.subscribe-content
+
+    .subscribe-block
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+      .text
+        p.title Щомісячна аналітика по овочах
+        p.smaller Звіт включає:
+        ul
+         li Аналітика по фруктах;
+         li Аналітика по овочах;
+         li Звіт по рибі;
+        p.price
+          | Вартість: 
+          span Безкоштовно
+      p.unsubscribe
+        | підписатись
+        = inline_svg "svg/done.svg"
+    .subscribe-block
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-1.jpg')})"
+      .text
+        p.title Щомісячна аналітика по овочах
+        p.price
+          | Вартість: 
+          span 35 
+          | грн/міс
+      p.unsubscribe
+        | підписатись
+        = inline_svg "svg/done.svg"
+    .subscribe-block
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+      .text
+        p.title Аналітика по фруктах
+        p.price
+          | Вартість: 
+          span Безкоштовно
+      p.unsubscribe
+        | підписатись
+        = inline_svg "svg/done.svg"
+    .subscribe-block
+      .photo
+        .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
+      .text
+        p.title Новини Шувар
+        p.price
+          | Вартість: 
+          span Безкоштовно
+      p.unsubscribe
+        | підписатись
+        = inline_svg "svg/done.svg"

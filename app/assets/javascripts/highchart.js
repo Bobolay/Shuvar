@@ -3,7 +3,7 @@ $(document).ready(function(){
     $chart_1 = $('#chart-1')
     $chart_2 = $('#chart-2')
 
-    if ($chart_1.length == 0 && $chart_2.length) {
+    if ($chart_1.length == 0 && $chart_2.length == 0) {
         return;
     }
     else {
