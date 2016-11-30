@@ -2,9 +2,9 @@
 
   .small-title Фільтр:
 
-  .filter-container
+  form.filter-container
     .filter-option.radio
-      input#option-1 type="radio"
+      input#option-1 type="radio" name="radio-filter"
       label for="option-1"
         | Овочі 
         span.qnty
@@ -12,7 +12,7 @@
       .check
       = inline_svg "svg/products-1.svg"
     .filter-option.radio
-      input#option-2 type="radio"
+      input#option-2 type="radio" name="radio-filter"
       label for="option-2"
         | Фрукти 
         span.qnty
@@ -20,7 +20,7 @@
       .check
       = inline_svg "svg/products-2.svg"
     .filter-option.radio
-      input#option-3 type="radio"
+      input#option-3 type="radio" name="radio-filter"
       label for="option-3"
         | Риба 
         span.qnty
@@ -28,7 +28,7 @@
       .check
       = inline_svg "svg/products-3.svg"
     .filter-option.radio
-      input#option-4 type="radio"
+      input#option-4 type="radio" name="radio-filter"
       label for="option-4"
         | М'ясо 
         span.qnty
@@ -36,7 +36,7 @@
       .check
       = inline_svg "svg/products-4.svg"
     .filter-option.radio
-      input#option-5 type="radio"
+      input#option-5 type="radio" name="radio-filter"
       label for="option-5"
         | Бакалія 
         span.qnty
@@ -44,7 +44,7 @@
       .check
       = inline_svg "svg/products-5.svg"
     .filter-option.radio
-      input#option-6 type="radio"
+      input#option-6 type="radio" name="radio-filter"
       label for="option-6"
         | Квіти 
         span.qnty

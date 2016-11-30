@@ -9,6 +9,8 @@
 
 #= require google-map
 
+#= require navigation
+
 #= require main
 
 #= require datepick
