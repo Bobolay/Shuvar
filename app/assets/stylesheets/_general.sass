@@ -163,6 +163,7 @@ a
   line-height: 40px
   padding: 0 20px
   cursor: pointer
+  +transition(0.15s)
   svg
     position: relative
     top: 8px
@@ -170,7 +171,8 @@ a
     fill: white
     width: 24px
     height: 24px
-    
+  &:hover
+    box-shadow: 0px 4px 8px rgba(0,0,0, 0.3)    
 
 .panel-button
   @extend .button
@@ -367,10 +369,8 @@ a
   .map-container
     margin-top: 30px
     width: 100%
-    height: 500px
     position: relative
     svg
-      position: absolute
       width: 100%
       height: 100%
   .info-statistics

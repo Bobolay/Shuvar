@@ -1,0 +1,21 @@
+.main-wrapper
+
+  .clearfix
+
+    .main-container
+      = render "page_log_in_content"
+
+    .side-bar.shadow
+
+      = render "product_category_on_sidebar"
+
+      .line-separator
+
+      = render "expert_view"
+
+      .indent-container.clearfix
+        a.see-more href=news_path переглянути всі
+
+      .line-separator
+
+      = render "advertisement"

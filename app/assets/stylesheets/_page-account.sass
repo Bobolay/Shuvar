@@ -5,9 +5,16 @@
 
   .smaller-medium
     color: $blue
+    clear: both
 
-  .grid-container
-    margin-bottom: 30px
+  .restore-password
+    color: $navy
+    font-size: 14px
+    +transition(0.3s)
+    cursor: pointer
+    &:hover
+      color: $blue
+
   .inputs-container
     .input-field
       padding: 20px 0
@@ -30,6 +37,7 @@
 
   #google-map
     height: 300px
+    margin-top: 30px
     @media #{$small-only}
       height: 200px
 

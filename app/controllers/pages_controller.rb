@@ -64,6 +64,10 @@ class PagesController < ApplicationController
 
   end  
 
+  def log_in
+
+  end  
+
   def personal_account
 
   end  

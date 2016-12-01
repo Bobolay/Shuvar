@@ -22,7 +22,8 @@
     position: relative
     background-color: $avatar-background-color
     padding: 20px 0
-    cursor: pointer
+    &.logged-in
+      cursor: pointer
     .avatar-photo
       position: relative
       width: 80px
@@ -30,12 +31,29 @@
       border-radius: 50%
       overflow: hidden
       margin: 0 auto
-    p
+    .profile-name
       font-size: 14px
       margin-top: 10px
       text-transform: uppercase
       +medium
       text-align: center
+    .sign-in, .register
+      float: none
+      display: block
+      width: 100px
+      line-height: 30px
+      margin: 10px auto
+    .sign-in
+      margin: 20px auto 10px
+    .register
+      background-color: transparent
+      box-shadow: none
+      width: 130px
+      color: $light-blue
+      font-weight: initial
+      +transition(0.3s)
+      &:hover
+        color: $blue
     svg
       position: relative
       top: 2px
