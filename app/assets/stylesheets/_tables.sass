@@ -43,7 +43,7 @@ table.analytics-table
       position: absolute
       opacity: 0
       top: 10px
-      right: 30px
+      right: 20px
       +transition(0.3s)
       display: none
       svg
@@ -58,7 +58,7 @@ table.analytics-table
           fill: white !important
       .hover-svg
         opacity: 1
-        right: 20px
+        right: 10px
     td:first-child
       &:after
         content: counter(rowNumber)
@@ -77,6 +77,7 @@ table.analytics-table
   th, td
     text-align: left
   td
+    position: relative
     padding: 10px 0
     color: $navy
     font-size: 14px

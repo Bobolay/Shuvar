@@ -1,33 +1,118 @@
 function initialize() {
     var styles = [
-      {
-        stylers: [
-          { hue: "#ffb300" },
-          { saturation: -14 },
-          { lightness: -5 },
-          { gamma: 1.28 }
-        ]
-      },{
-        featureType: "all",
-        elementType: "all",
-      }
+        {
+                "featureType": "administrative",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "saturation": -10
+                    },
+                    {
+                        "lightness": 30
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.man_made",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    },
+                    {
+                        "saturation": -60
+                    },
+                    {
+                        "lightness": 10
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.natural",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    },
+                    {
+                        "saturation": -60
+                    },
+                    {
+                        "lightness": 60
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    },
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "lightness": 60
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    },
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "lightness": 60
+                    }
+                ]
+            }
     ];
     var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
     
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    var isDraggable = w > 640 ? true : false;
-    var xCordinate, zoomZoom = null;
-    if (w > 640){
-        xCordinate = 23.9097038;
-        zoomZoom = 16;
-    } else {
-        xCordinate = 23.9097038;
-        zoomZoom = 16;
-    }
-
+    
     var mapOptions = {
-        zoom: zoomZoom,
-        center: new google.maps.LatLng(49.8450756, 24.0213671),
+        zoom: 16,
+        center: new google.maps.LatLng(49.7997055, 24.0246802),
         panControl:false,
         zoomControl:true,
         mapTypeControl:false,
@@ -43,11 +128,11 @@ function initialize() {
     };
     var map = new google.maps.Map(document.getElementById('google-map'),
         mapOptions);
-    var image = '/assets/icons/map-marker.svg'
+    var image = '/assets/svg/geo.svg'
     var marker = new google.maps.Marker({
         map: map,
         draggable: false,
-        position: new google.maps.LatLng(49.8450956, 24.0227671),
+        position: new google.maps.LatLng(49.7997055, 24.0246802),
         icon: image
     });
     map.mapTypes.set('map_style', styledMap);

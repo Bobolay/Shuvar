@@ -40,7 +40,18 @@ $(document).on "ready", ->
   #     U N S U B S C R I B E
 
   $('.subscribe-content .unsubscribe').on "click", ->
-    $(this).closest('.subscribe-block').css("display", "none")
+    $('.info-popup-for-unsubscribe').fadeIn()
+  $('.info-popup-for-unsubscribe .close-popup').on "click", ->
+    $('.info-popup-for-unsubscribe').fadeOut()
+
+  $.clickOut(".info-popup-for-unsubscribe .indent-container",
+    ()->
+      $(".info-popup-for-unsubscribe").fadeOut()
+    {except: ".info-popup-for-unsubscribe .indent-container, .subscribe-content .unsubscribe"}
+  )
+
+  $('.subscribe-content .unsubscribe').on "click", ->
+    # $(this).closest('.subscribe-block').remove()
 
   #     S U B S C R I B E     P O P U P
 

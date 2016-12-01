@@ -8,5 +8,3 @@ $(document).on "ready", ->
       $(".top-nav .search-input-field .match-categories-container").removeClass('visible')
     {except: ".top-nav .search-input-field"}
   )
-
-  

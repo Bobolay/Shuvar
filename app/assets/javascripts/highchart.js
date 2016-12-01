@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
-    $chart_1 = $('#chart-1')
-    $chart_2 = $('#chart-2')
+    $chart_price = $('#chart-price')
+    $chart_volume = $('#chart-volume')
+    $chart_import_export = $('#chart-import-export')
 
-    if ($chart_1.length == 0 && $chart_2.length == 0) {
+    if ($chart_price.length == 0 && $chart_volume.length == 0 && $chart_import_export.length == 0) {
         return;
     }
     else {
@@ -11,7 +12,7 @@ $(document).ready(function(){
         //     C H A R T   1
 
         $(function () { 
-            Highcharts.chart('chart-1', {
+            Highcharts.chart('chart-price', {
                 chart: {
                     type: 'column'
                 },
@@ -39,7 +40,7 @@ $(document).ready(function(){
         //     C H A R T   2
 
         $(function () {
-            Highcharts.chart('chart-2', {
+            Highcharts.chart('chart-volume', {
                 chart: {
                     type: 'line'
                 },
@@ -72,7 +73,41 @@ $(document).ready(function(){
             });
         });
 
+        //     C H A R T     3
 
+        $(function () {
+            Highcharts.chart('chart-import-export', {
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: ''
+                },
+                xAxis: {
+                    categories: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Тонн'
+                    }
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                    name: 'Імпорт',
+                    data: [5.0, 4.9, 5.6, 14.5, 14.4, 19.2, 25.2, 22.5, 21.3, 18.3, 12.9, 10.2]
+                }, {
+                    name: 'Експорт',
+                    data: [2.9, 3.4, 5.5, 7.5, 12.1, 14.2, 16.0, 13.2, 14.2, 10.3, 6.4, 4.5]
+                }]
+            });
+        });
 
     };
 });

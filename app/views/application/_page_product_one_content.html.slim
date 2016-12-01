@@ -3,11 +3,54 @@
   .indent-container
 
     .breadcrumbs
-      | Аналітика / 
-      span.current-new Помідор
+      a href=news_path
+        | Аналітика / 
+      span Помідор
 
-    p.blue-title Ціна
+    p.blue-title.blue-title-first Ціна
+    
+    .indent-container.shadow
+      #chart-price
+      .clearfix
+        a.panel-button
+          | детальніше
 
-    .clearfix
-      a.button href=product_one_filters_path
-        | детальніше
+    p.blue-title Обсяги продукту
+    
+    .indent-container.shadow
+      #chart-volume
+      .clearfix
+        a.panel-button
+          | детальніше
+
+    p.blue-title Виробництво
+    
+    .indent-container.shadow.production-container
+      .map-container
+        = inline_svg "svg/map.svg"
+      .info-statistics
+        p.text-with-bold-span
+          | Виробництво картоплі у області з 
+          span 20 січня 2016 
+          | по 
+          span 7 листопада 2016 
+          | складає:
+        p.total
+          | 12560 
+          span тонн
+        .progress-bar
+          .percent-bar
+          p
+            span 18% 
+            | від загальної по Україні
+      .clearfix
+        a.panel-button
+          | детальніше
+
+    p.blue-title.blue-title-first Ціна
+    
+    .indent-container.shadow
+      #chart-import-export
+      .clearfix
+        a.panel-button
+          | детальніше
