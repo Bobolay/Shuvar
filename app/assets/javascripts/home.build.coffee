@@ -28,3 +28,5 @@
 #= require dropdown
 
 #= require highchart
+
+#= require map

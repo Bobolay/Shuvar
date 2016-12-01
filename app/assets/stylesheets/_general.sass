@@ -373,6 +373,11 @@ a
     svg
       width: 100%
       height: 100%
+      .region
+        cursor: pointer
+        +transition(0.15s)
+        &:hover
+          fill: $blue
   .info-statistics
     max-width: 300px
     .total
