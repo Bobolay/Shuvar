@@ -1,23 +1,8 @@
-$.get({
-  url:"/locations.json",
-  dataType: "json",
-  success: (data)->
-    console.log("data: ", data)
-    items_html = ""
-    for item in data
-      item_html = ""
-      item_html = "
-      <div class='info-statistics-region' data-region-id='#{item.region_id}'>
-        <div class='text-with-bold-span'>
-          #{item.description}      
-        </div>
-        <div class='total'>#{item.weight}</div>
-      </div>"
+$(document).on "ready", ->
 
-      items_html += item_html
+  $map = $('.map-container svg')
+  $region = $map.find('.region')
 
-    $('.info-statistics').html(items_html)
-
-  error: (data)->
-    console.log("error")
-  })
+  $region.on 'click', ->
+    $region_id = $(this).attr("data-region-id")
+    console.log("region:", $region_id)
