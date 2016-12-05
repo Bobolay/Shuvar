@@ -3,14 +3,14 @@
   p.blue-title.blue-title-first Контакти
 
   .shadow.indent-container.map-container
-    a.contact-block href="tel:+380324567887"
+    a.contact-block href="tel:+380324567887" itemscope="" itemtype="http://schema.org/PostalAddress"
       = inline_svg "svg/phone.svg"
       .small-title Телефон
-      .smaller +38 032 456 7887
+      .smaller itemprop="telephone" +38 032 456 7887
     .contact-block
       = inline_svg "svg/geo.svg"
       .small-title Адреса
-      .smaller Україна, м.Львів, вул. Хуторівка 4б
+      .smaller itemprop="address" Україна, м.Львів, вул. Хуторівка 4б
       
     #google-map
 
@@ -18,55 +18,55 @@
 
   .grid-container.our-team
 
-    .grid-block.shadow.clearfix.indent-container
-      .photo
+    .grid-block.shadow.clearfix.indent-container itemscope="" itemtype="http://schema.org/Person"
+      .photo itemProp="image"
         .bg-img style="background-image: url(#{asset_path('photo/stuff-2.jpg')})"
       .text
-        .title Тетяна Гетьман
-        .small-title Керівник &#171;Info-Shuvar&#187;
-        a.contact-block href="tel:+380997630232"
+        .title itemprop="name" Тетяна Гетьман
+        .small-title itemprop="jobTitle" Керівник &#171;Info-Shuvar&#187;
+        a.contact-block href="tel:+380997630232" itemprop="telephone"
           = inline_svg "svg/phone.svg"
           .smaller +38 099 7630232
-        a.contact-block href="mailto:t.getman@shuvar.com"
+        a.contact-block href="mailto:t.getman@shuvar.com" itemprop="email"
           = inline_svg "svg/ic_email_black.svg"
           .smaller t.getman@shuvar.com
 
-    .grid-block.shadow.clearfix.indent-container
-      .photo
+    .grid-block.shadow.clearfix.indent-container itemscope="" itemtype="http://schema.org/Person"
+      .photo itemProp="image"
         .bg-img style="background-image: url(#{asset_path('photo/stuff-2.jpg')})"
       .text
-        .title Віта Хадновська
-        .small-title Фахівець по роботі з виробниками
-        a.contact-block href="tel:+380963162622"
+        .title itemprop="name" Віта Хадновська
+        .small-title itemprop="jobTitle" Фахівець по роботі з виробниками
+        a.contact-block href="tel:+380963162622" itemprop="telephone"
           = inline_svg "svg/phone.svg"
           .smaller +38 096 3162622
-        a.contact-block href="mailto:v.hodnovska@shuvar.com"
+        a.contact-block href="mailto:v.hodnovska@shuvar.com" itemprop="email"
           = inline_svg "svg/ic_email_black.svg"
           .smaller v.hodnovska@shuvar.com
 
-    .grid-block.shadow.clearfix.indent-container
-      .photo
+    .grid-block.shadow.clearfix.indent-container itemscope="" itemtype="http://schema.org/Person"
+      .photo itemProp="image"
         .bg-img style="background-image: url(#{asset_path('photo/stuff-1.jpg')})"
       .text
-        .title Іван Воськало
-        .small-title Фахівець з моніторингу цін
-        a.contact-block href="tel:+380984311377"
+        .title itemprop="name" Іван Воськало
+        .small-title itemprop="jobTitle" Фахівець з моніторингу цін
+        a.contact-block href="tel:+380984311377" itemprop="telephone"
           = inline_svg "svg/phone.svg"
           .smaller +38 098 4311377
-        a.contact-block href="mailto:i.voskalo@shuvar.com"
+        a.contact-block href="mailto:i.voskalo@shuvar.com" itemprop="email"
           = inline_svg "svg/ic_email_black.svg"
           .smaller i.voskalo@shuvar.com
 
-    .grid-block.shadow.clearfix.indent-container
-      .photo
+    .grid-block.shadow.clearfix.indent-container itemscope="" itemtype="http://schema.org/Person"
+      .photo itemProp="image"
         .bg-img style="background-image: url(#{asset_path('photo/stuff-2.jpg')})"
       .text
-        .title Оксана Козак
-        .small-title Фахівець з ЗЕД
-        a.contact-block href="tel:+380673058214"
+        .title itemprop="name" Оксана Козак
+        .small-title itemprop="jobTitle" Фахівець з ЗЕД
+        a.contact-block href="tel:+380673058214" itemprop="telephone"
           = inline_svg "svg/phone.svg"
           .smaller +38 067 3058214
-        a.contact-block href="mailto:o.kozak@shuvar.com"
+        a.contact-block href="mailto:o.kozak@shuvar.com" itemprop="email"
           = inline_svg "svg/ic_email_black.svg"
           .smaller o.kozak@shuvar.com
 

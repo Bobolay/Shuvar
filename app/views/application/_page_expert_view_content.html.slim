@@ -2,31 +2,31 @@
 
   .indent-container
 
-    .breadcrumbs
-      a href=news_path
+    .breadcrumbs itemscope="" itemtype="http://schema.org/WebPage"
+      a itemprop="breadcrumb" href=news_path
         | Новини / 
-      span.current-new Експерти прогнозують подорожчання всіх продуктів
+      span Експерти прогнозують подорожчання всіх продуктів
 
     .shadow.new-container
 
       .photo
         .bg-img style="background-image: url(#{asset_path('photo/news-img-2.jpg')})"
 
-      .indent-container
-        p.date.smaller-medium
+      .indent-container itemscope="" itemtype="http://schema.org/WebPage"
+        p.date.smaller-medium itemProp="datePublished"
           | 23 липня 2016
           = inline_svg "svg/calendar.svg"
 
-        p.new-name
+        p.new-name itemProp="name"
           | Зворушлива назва статті експерта
 
         .line-separator
 
-        p.main-text
+        p.main-text itemProp="text"
           | Виноград поряд з відмінними смаковими характеристиками володіє настільки високою поживністю (0,7-1,0 ккал / кг), що його вживання рекомендується людям у виснажливий період реабілітації. Крім того, винограду притаманні протизапальні та муколітичні (розріджують мокротиння) властивості, завдяки чому його бажано включити в меню людей, які страждають від хронічних бронхітів.
-        p.main-text
+        p.main-text itemProp="text"
           | Регулярне споживання ягід покращує всі значимі показники крові, сприяє підвищенню гемоглобіну. А враховуючи те, що виноград є справжнім джерелом незамінних мікроелементів, включаючи кремній, залізо, фосфор, цинк, кальцій і життєво необхідних вітамінів (групи В, С, Р і РР), його можна використовувати для підвищення захисних функцій організму, поліпшення опірності хворобам і заповнення життєвих сил.
-        p.main-text
+        p.main-text itemProp="text"
           | Виноградна дієта показана і тим, хто має в анамнезі такі діагнози як панкреатит і холецистит виключно через те, що виноград провокує виділення жовчі, а це, відповідно, дозволяє очистити організм. Виноградні кісточки містять антиоксиданти, які перешкоджають окисленню холестерину, блокуючого судини. Незамінний виноград і при хронічних запорах. Однозначно, користь і шкода винограду для організму людини є тим крихким балансом, який допомагає продовжити молодість без шкоди для здоров'я.
 
         .line-separator
@@ -37,9 +37,9 @@
 
   .indent-container
 
-    .grid-container
+    .grid-container itemscope="" itemtype="http://schema.org/SiteNavigationElement"
 
-      .grid-block.shadow.go-prev
+      .grid-block.shadow.go-prev itemProp="accessibilityControl"
         .photo
           .bg-img style="background-image: url(#{asset_path('photo/products/fruit-1.png')})"
           = inline_svg "svg/arrow-left.svg"
@@ -47,7 +47,7 @@
           p.small-title Попередня стаття
           p.title Думка попереднього експерта
           
-      .grid-block.shadow.go-next
+      .grid-block.shadow.go-next itemProp="accessibilityControl"
         .text
           p.small-title Наступна стаття
           p.title Думка наступного експерта

@@ -84,6 +84,8 @@
       position: relative
       width: calc(25% - 20px)
       text-align: center
+      +transition(0.3s)
+      cursor: pointer
       &:after
         content: ''
         display: block
@@ -97,11 +99,20 @@
         +translate(-50%,-50%)
         width: 50%
         height: 50%
+        +transition(0.3s)
       .name
         position: absolute
         bottom: 10%
         width: 100%
         text-align: center
+        +transition(0.3s)
+      &:hover
+        background: $blue
+        svg
+          *
+            fill: white
+        .name
+          color: white
 
   .join-us
     display: flex
@@ -123,7 +134,7 @@
       width: 60%
       padding: 40px
     .main-title
-      text-align: center
+      text-align: left
     .button
       float: none
       position: absolute

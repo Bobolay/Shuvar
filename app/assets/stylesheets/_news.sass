@@ -62,16 +62,22 @@
     +clearfix
     padding: 20px
     border-bottom: 1px solid $light-grey
+    +transition-property(background)
+    +transition-duration(0.3s)
     @media #{$small-only}
       padding: 10px
     & *
-      +transition(0.3s)
+      +transition-property(color)
+      +transition-duration(0.3s)
     .photo
       position: relative
       float: left
       width: 100px
       height: 80px
       overflow: hidden
+      .bg-img
+        +transition-property(all)
+        +transition-duration(0.3s)
     .text
       padding-left: 120px
       .title
@@ -87,7 +93,7 @@
         color: $dark-grey
         margin-top: 10px
     &:hover
-      background-color: $blue
+      background: $blue
       .bg-img
         +scale(1.05)
       .title, .date
