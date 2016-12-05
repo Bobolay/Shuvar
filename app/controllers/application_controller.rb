@@ -19,4 +19,14 @@ class ApplicationController < ActionController::Base
   def show_view
     render params[:path], layout: false
   end
+
+  def views_index
+    views_root = Rails.root.join('app/views')
+    list = Dir["#{views_root}/**/*.slim"]
+    .map{|s| 
+      s.gsub("#{views_root}/", "")
+       }
+    
+    render inline: list.map{|link| "<a href='/views/#{link}'>#{link}</a>" }.join("\n")
+  end
 end

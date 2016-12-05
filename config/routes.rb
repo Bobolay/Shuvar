@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: "pages#main"
 
+  get "views", to: "application#views_index"
   get "views/*path", to: "application#show_view"
 
   controller :pages do
