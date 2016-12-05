@@ -29,4 +29,4 @@
 
 #= require highchart
 
-#= require map
+#= require ukraine-map

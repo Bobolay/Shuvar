@@ -34,14 +34,7 @@ html
 
     = render "call_us_popup"
 
-    - content_for?(:popups) ? content_for(:popups)  : nil
-
-    - content_for :popups do
-      = render "info_popup_for_subscribe"
-
-    = render "info_popup_for_unsubscribe"
-
-    = render "info_popup_for_product_report"
+    = content_for?(:popups) ? content_for(:popups)  : nil
 
     script src="http://maps.googleapis.com/maps/api/js"
     = javascript_include_tag "home.build", 'data-turbolinks-track' => true

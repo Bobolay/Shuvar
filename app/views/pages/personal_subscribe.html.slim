@@ -26,3 +26,9 @@
           span = inline_svg "svg/person.svg"
 
       = render "advertisement"
+
+- content_for :popups do
+  = render "info_popup_for_subscribe"
+
+- content_for :popups do
+  = render "info_popup_for_unsubscribe"
