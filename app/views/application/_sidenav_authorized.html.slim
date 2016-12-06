@@ -1,10 +1,9 @@
-.avatar-container
+.avatar-container.logged-in
   .avatar-photo
-    .bg-img style="background-image: url(#{asset_path('photo/unknown.png')})"
-  a.button.sign-in href=log_in_path
-    | вхід
-  a.button.register href=register_path
-    | реєстрація
+    .bg-img style="background-image: url(#{asset_path('photo/avatar.jpg')})"
+  .profile-name
+    | петро петрович
+    = inline_svg "svg/sidebar-arrow.svg"
   .dropdown-container.shadow
     a.smaller-medium.go-to-account href=personal_account_path особистий кабінет
     a.smaller.exit Вихід

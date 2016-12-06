@@ -19,7 +19,11 @@ html
       = render "topnav"
 
     .side-nav.shadow
-      = render "sidenav_2"
+
+      - if params[:action]=="main"
+        = render "sidenav_authorized"
+      - else
+        = render "sidenav"
 
     = yield
 
