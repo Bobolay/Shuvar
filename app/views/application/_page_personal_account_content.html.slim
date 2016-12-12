@@ -53,7 +53,7 @@
 
     .upload-photo-container
       .avatar-photo
-        .bg-img style="background-image: url(#{asset_path('photo/unknown.png')})"
+        .bg-img style="background-image: url(#{asset_path('photo/stub-photo.png')})"
       span завантажити фото
     form.grid-container
       .grid-block.inputs-container
@@ -78,7 +78,7 @@
           label Телефон
           span.bar
         .input-field
-          input
+          input.datepicker
           label День народження
           span.bar
           .icon = inline_svg "svg/calendar.svg"
