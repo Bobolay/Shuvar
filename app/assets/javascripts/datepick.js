@@ -12,7 +12,4 @@ $(function() {
       $input_wrap.addClass("not-empty")
     }
   });
-
-
-
 });
