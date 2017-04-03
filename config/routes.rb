@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     get "personal_account", action: "personal_account"
     get "personal_subscribe", action: "personal_subscribe"
     get "search_result", action: "search_result"
+    get "not_found", action: "not_found"
 
   end
 

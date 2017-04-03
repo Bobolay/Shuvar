@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -93,3 +93,4 @@ gem 'require_reloader'
 
 gem 'puma'
 
+gem 'html2slim'

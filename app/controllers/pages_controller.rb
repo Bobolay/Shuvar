@@ -78,7 +78,11 @@ class PagesController < ApplicationController
 
   def search_result
 
-  end  
+  end
+
+  def not_found
+
+  end
 
   private
 

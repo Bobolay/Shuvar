@@ -1,0 +1,175 @@
+.not-found {
+  position: relative;
+  height: 100vh;
+  background: #37474F;
+}
+.not-found .top-logo {
+  width: 120px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.not-found .top-logo svg {
+  width: 100%;
+  height: 100%;
+}
+.not-found .left-part {
+  color: #778F9B;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  color: #778F9B;
+}
+.not-found .left-part a {
+  color: inherit;
+  display: inline-block;
+}
+.not-found .left-part a:hover {
+  text-decoration: underline;
+}
+.not-found .left-part svg {
+  fill: #778F9B;
+  width: 25px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+@media screen and (max-width: 39.9375em) {
+  .not-found .left-part span {
+    display: none;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .not-found .left-part span {
+    display: none;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .not-found .left-part span ~ a {
+    display: none;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .not-found .left-part span ~ a {
+    display: none;
+  }
+}
+.not-found .left-part:hover a {
+  color: #029AE4;
+}
+.not-found .left-part:hover a svg {
+  fill: #029AE4;
+}
+.not-found .right-part {
+  color: #778F9B;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+@media screen and (max-width: 39.9375em) {
+  .not-found .right-part {
+    font-size: 10px;
+  }
+}
+.not-found .flex-box {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 800px;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.not-found .flex-box .box {
+  position: relative;
+  padding: 0 20px;
+}
+@media screen and (min-width: 40em) {
+  .not-found .flex-box .box {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 40em) {
+  .not-found .flex-box .box:first-child {
+    padding-bottom: 100px;
+    text-align: right;
+    border-right: 1px solid #445963;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .not-found .flex-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.not-found .flex-box .not-found-title {
+  color: #029AE4;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+@media screen and (min-width: 75em) {
+  .not-found .flex-box .not-found-title {
+    font-size: 200px;
+  }
+}
+.not-found .flex-box .not-found-subtitle {
+  color: white;
+  font-size: 30px;
+}
+.not-found .flex-box .text {
+  margin-top: 20px;
+}
+@media screen and (min-width: 40em) {
+  .not-found .flex-box .text {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+}
+.not-found .flex-box .regular {
+  color: #AFBDC4;
+}
+.not-found .flex-box .home-link {
+  margin-top: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: medium;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.not-found .flex-box .home-link svg {
+  fill: white;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: fill 0.2s;
+  -o-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+.not-found .flex-box .home-link span {
+  vertical-align: middle;
+}
+.not-found .flex-box .home-link:hover {
+  color: #429F46;
+}
+.not-found .flex-box .home-link:hover svg {
+  fill: #429F46;
+}

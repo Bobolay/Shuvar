@@ -8,8 +8,7 @@ $(function() {
       prevText: 'Попередній',
       nextText: 'Наступний',
     onSelect: function(){
-      $input_wrap = $(this).closest(".input"),
-      $input_wrap.addClass("not-empty")
+      $(this).addClass("used")
     }
   });
 });

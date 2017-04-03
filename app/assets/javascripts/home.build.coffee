@@ -30,3 +30,5 @@
 #= require highchart
 
 #= require ukraine-map
+
+#= require loader

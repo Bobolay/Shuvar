@@ -1,0 +1,23 @@
+.not-found
+
+  .top-logo = inline_svg "svg/menu-logo.svg"
+
+  .left-part
+    a.logo href="http://voroninstudio.eu/uk" target="_blank" = inline_svg "svg/studio-logo.svg"
+    span Розроблено в 
+    a href="http://voroninstudio.eu/uk" target="_blank" студії М.Вороніна 
+    span  в 2016 році
+  .right-part
+    p
+      | Правила цитування | &copy; 2016 Шувар &mdash; All right reserved
+
+  .flex-box
+    .box
+      p.not-found-title 404
+      p.not-found-subtitle error
+    .box
+      .text
+        p.regular Сторінка не знайдена. Поверніться назад або перейдіть на головну сторінку сайту.
+        a.home-link href=root_path
+          = inline_svg "svg/ic_home_black.svg"
+          span головна

@@ -1,0 +1,119 @@
+.not-found
+  position: relative
+  height: 100vh
+  background: #37474F
+  .top-logo
+    width: 120px
+    position: absolute
+    top: 20px
+    left: 20px
+    svg
+      width: 100%
+      height: 100%
+  .left-part
+    color: $dark-grey
+    position: absolute
+    left: 20px
+    bottom: 20px
+    +transition(0.25s)
+    color: $dark-grey
+    a
+      color: inherit
+      display: inline-block
+      &:hover
+        text-decoration: underline
+    svg
+      fill: $dark-grey
+      width: 25px
+      display: inline-block
+      margin-right: 10px
+      position: relative
+      top: 5px
+      +transition(0.25s)
+    span
+      @media #{$small-only}
+        display: none
+      @media #{$medium-only}
+        display: none
+    span ~ a
+      @media #{$small-only}
+        display: none
+      @media #{$medium-only}
+        display: none
+    &:hover
+      a
+        color: $blue
+        svg
+          fill: $blue
+  .right-part
+    color: $dark-grey
+    position: absolute
+    right: 20px
+    bottom: 20px
+    @media #{$small-only}
+      font-size: 10px
+
+  .flex-box
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    width: 800px
+    max-width: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    +translate(-50%,-50%)
+    .box
+      position: relative
+      padding: 0 20px
+      @media #{$medium-up}
+        flex-basis: 50%
+      &:first-child
+        @media #{$medium-up}
+          padding-bottom: 100px
+          text-align: right
+          border-right: 1px solid #445963
+    @media #{$small-only}
+      flex-direction: column
+      text-align: center
+
+    .not-found-title
+      color: #029AE4
+      font-size: 100px
+      +bold
+      line-height: 0.8
+      @media #{$xlarge-up}
+        font-size: 200px
+    .not-found-subtitle
+      color: white
+      font-size: 30px
+    .text
+      margin-top: 20px
+      @media #{$medium-up}
+        width: 80%
+        position: absolute
+        bottom: 0
+        left: 20px
+    .regular
+      color: #AFBDC4
+    .home-link
+      margin-top: 30px
+      color: white
+      text-transform: uppercase
+      font-weight: medium
+      +transition(color 0.2s)
+      svg
+        fill: white
+        vertical-align: middle
+        margin-right: 10px
+        width: 20px
+        height: 20px
+        +transition(fill 0.2s)
+      span
+        vertical-align: middle
+      &:hover
+        color: $green
+        svg
+          fill: $green
